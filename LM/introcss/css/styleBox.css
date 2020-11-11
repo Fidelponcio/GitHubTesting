@@ -1,0 +1,13 @@
+.caja {
+background-color: blue;
+height: 10px;
+width:45%;
+display: inline-block;
+}
+
+.caja2 {
+background-color:green;
+height: 10px;
+width: 45%;
+display: inline-block;
+}
