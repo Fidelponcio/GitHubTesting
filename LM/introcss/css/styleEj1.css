@@ -1,6 +1,7 @@
 :root {
   --ancho: 16rem;
   --alto: 12rem;
+/*--alto calc(3*var(--ancho)/4);   /4*3 = ancho/alto | alto=ancho/(4*3)*/
 }
 
 body {
