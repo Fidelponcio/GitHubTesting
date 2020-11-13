@@ -16,6 +16,7 @@ a {
 a:hover, li:hover {
   background-color: #0050fc;
   color: rgb(0, 255, 221);
+  transition: 2.5s;
 }
 
 

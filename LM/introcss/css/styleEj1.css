@@ -1,0 +1,46 @@
+:root {
+  --ancho: 16rem;
+  --alto: 12rem;
+}
+
+body {
+  background: hsl(0, 0%, 25%);
+}
+
+.bandera2 {
+  width: var(--ancho);
+  height: var(--alto);
+  background-color: green;
+}
+
+.vertical {
+  display: inline-block;
+  height: var(--alto);
+  background-color: #f00;
+  width: 15%;
+}
+
+.franjas {
+  display: inline-block;
+  height: 100%;
+  width: 85%;
+  background-color: #f0f;
+}
+
+.franja1 {
+width: 100%;
+height: 33.33%;
+background-color: darkgreen;
+}
+
+.franja2 {
+width:100%;
+height: 33.33%;
+background-color: white;
+}
+
+.franja3 {
+    width:100%;
+    height: 33.33%;
+    background-color: black;
+    }
