@@ -1,0 +1,14 @@
+.root {
+    --ancho: 16rem;
+    --alto: calc(var(--ancho) / 4 * 3);
+}
+
+body {
+    background: rgb(34, 1, 153);
+}
+.box {
+width:var(--ancho);
+height:var(--alto);
+background-color: rgb(87, 177, 2);
+
+}
