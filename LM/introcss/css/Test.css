@@ -1,0 +1,18 @@
+p {
+    margin: 5px;
+}
+
+.caja {
+    height: 60px;
+    width: 80px;
+    margin:5px;
+    background: chocolate;
+}
+
+.subcaja {
+    height: 10px;
+    width: 40px;
+    margin-top: 15px;
+    background: cyan;
+
+}
