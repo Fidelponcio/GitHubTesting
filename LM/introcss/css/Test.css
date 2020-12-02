@@ -1,75 +1,146 @@
 * {
-    font-family: monospace;
+  font-family: monospace;
+}
+
+:root {
+--ancho: 100px;
+--alto: 100px;
 }
 
 p {
-    margin: 15px;
-    background-color: tomato;
-    border: 2.5em solid;
-    padding: 0.5em 1em;
-    border-color: darkmagenta darkolivegreen darkorchid darkseagreen;
+  margin: 15px;
+  background-color: tomato;
+  border: 2.5em solid;
+  padding: 0.5em 1em;
+  border-color: darkmagenta darkolivegreen darkorchid darkseagreen;
 }
-
-.circulo {
-    height: 5px;
-    width: 5px;
-    background-color: red;
-    border-radius: 20px 20px;
-    padding: 10px;
-    overflow:hidden;
-    transition: 1.5s;
-}
-
-.triangulo {
-    transform: scaleY(0.5);
-    border: 20px solid transparent;
-    border-left-color: white;
-    margin-top: 5px;
-    margin-left: -80px;
-    transition: 1.5s;
-    
-}
-
-.circulo:hover {
-height:50px;
-width: 80px;
-
-}
-
-.circulo:hover > .triangulo {
-    margin-left:30px;
-    
-}
-
 
 /* [condiciones] > [a qué elemento le aplico la regla] */
 .caja:hover > .subcaja {
-    margin-left:10px;
-    
+  margin-left: 10px;
 }
 
 .caja {
-    margin:15px;
-    height: 60px;
-    width: 90px;
-    background: chocolate;
-    padding: 0.01px;
-    overflow: hidden;
+  margin: 15px;
+  height: 60px;
+  width: 90px;
+  background: chocolate;
+  padding: 0.01px;
+  overflow: hidden;
 }
 
 .subcaja {
-    margin-top:10px;
-    margin-left: 90px;
-    height: 10px;
-    width: 40px;
-    background: cyan;
-    transition: margin 2s;
+  margin-top: 10px;
+  margin-left: 90px;
+  height: 10px;
+  width: 40px;
+  background: cyan;
+  transition: margin 2s;
 }
 
 .cojo {
-    display: inline-block;
-    background-color:crimson;
-    padding: 2px, 4px;
-    margin: 10px;
+  display: inline-block;
+  background-color: crimson;
+  padding: 2px, 4px;
+  margin: 10px;
+}
+
+.circulo {
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 20px 20px;
+  padding: 10px;
+  overflow: hidden;
+  transition: 1.5s;
+}
+
+.triangulo {
+  transform: scaleY(0.5);
+  border: 20px solid transparent;
+  border-left-color: white;
+  margin-top: 5px;
+  margin-left: -80px;
+  transition: 1.5s;
+}
+
+.circulo:hover {
+  height: 50px;
+  width: 80px;
+}
+
+.circulo:hover > .triangulo {
+  margin-left: 30px;
+}
+
+.tablero {
+    
+    border: 1.5px solid darkkhaki;
+    height: var(--alto);
+    width: var(--ancho);
+    background-color: cornflowerblue;
     
 }
+
+.blanco {
+
+height: 12.5px;
+width: 12.5px;
+background-color: white;
+box-shadow: 12.5px 0px black,
+            25px 0px white,
+            37.5px 0px black,
+            50px 0px white,
+            62.5px 0px black,
+            75px 0px white,
+            87.5px 0px black,
+
+            100px 0px black,
+            125px 0px white,
+            137.5px 0px black,
+            150px 0px white,
+            162.5px 0px black,
+            175px 0px white,
+            187.5px 0px black,
+            200px 0 px white;
+
+}
+
+.marco {
+    background-color: orangered;
+    padding: 2em;
+}
+
+.sol {
+    width:calc(var(--ancho)/2);
+    height:calc(var(--alto)/2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: -15px;
+    box-shadow: -5px -5px 10px 1.5px inset hsl(0, 0%, 1%),
+                5px 5px 5px 1.5px inset hsl(0, 0%, 2%),
+                0px 0px 15px hsl(59, 100%, 50%);
+}
+
+.sol2{
+    width:calc(var(--ancho)/3);
+    height:calc(var(--alto)/3);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: -5px -5px 10px 1.5px inset hsl(0, 0%, 1%),
+                5px 5px 5px 1.5px inset hsl(0, 0%, 2%),
+                0px 0px 15px hsl(59, 100%, 50%);
+}
+
+.circle {
+    width:calc(var(--ancho)/4);
+    height:calc(var(--alto)/4);
+    background-color: hsl(255,75%,50%);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -5px -5px 10px 1.5px inset hsl(255, 75%, 25%),
+                5px 5px 5px 1.5px inset hsl(255, 75%, 75%),
+                0px 0px 15px hsl(0, 0%, 100%);
+            }
