@@ -160,33 +160,42 @@ box-shadow: 12.5px 0px black,
 }
 
 .marco {
-    background-color: orangered;
+    background-color: rgb(37, 4, 182);
     padding: 2em;
 }
 
-.sol {
-    width:calc(var(--ancho)/2);
+.sol { 
+  display: inline-block; 
+  width:calc(var(--ancho)/2);
     height:calc(var(--alto)/2);
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     margin-top: -15px;
-    box-shadow: -5px -5px 10px 1.5px inset hsl(0, 0%, 1%),
-                5px 5px 5px 1.5px inset hsl(0, 0%, 2%),
-                0px 0px 15px hsl(59, 100%, 50%);
+    box-shadow: -5px -5px 10px 1.5px inset hsl(45, 100%, 50%),
+                5px 5px 5px 1.5px inset hsl(55, 100%, 75%),
+                0px 0px 5px 50px inset hsl(61, 91%, 66%),
+                0px 0px 50px 25px  hsl(50, 88%, 76%);
+    transition: margin-left 3s, box-shadow 4.5s;
 }
 
-.sol2{
-    width:calc(var(--ancho)/3);
-    height:calc(var(--alto)/3);
-    background-color: rgb(255, 255, 255);
+.luna {
+    display: inline-block;
+    width:calc(var(--ancho)/2);
+    height:calc(var(--alto)/2);
+    background-color: rgb(179, 162, 162);
     border-radius: 50%;
-    margin: auto;
-    box-shadow: -5px -5px 10px 1.5px inset hsl(0, 0%, 1%),
-                5px 5px 5px 1.5px inset hsl(0, 0%, 2%),
-                0px 0px 15px hsl(59, 100%, 50%);
+    margin-left:350px;
+    
+    box-shadow: -5px -5px 10px 1.5px inset hsl(0, 0%, 30%),
+    5px 5px 5px 1.5px inset hsl(60, 1%, 77%),
+    0px 0px 5px 50px inset hsl(60, 5%, 61%),
+    0px 0px 50px 25px hsl(48, 4%, 45%);
+    transition: 3s;
+    
+    
 }
 
-.circle {
+.planeta {
     width:calc(var(--ancho)/4);
     height:calc(var(--alto)/4);
     background-color: hsl(255,75%,50%);
@@ -196,4 +205,17 @@ box-shadow: 12.5px 0px black,
     box-shadow: -5px -5px 10px 1.5px inset hsl(255, 75%, 25%),
                 5px 5px 5px 1.5px inset hsl(255, 75%, 75%),
                 0px 0px 15px hsl(0, 0%, 100%);
+    
             }
+
+.marco:hover > .sol {
+    margin-left:200px;
+    box-shadow: -5px -5px 10px 1.5px inset hsl(0, 1%, 27%),
+                5px 5px 5px 1.5px inset hsl(0, 0%, 31%),
+                0px 0px 5px 50px inset hsl(0, 0%, 27%),
+                0px 0px 50px 25px  hsl(48, 4%, 45%);
+}
+
+.marco:hover > .luna {
+  margin-left:-50px;
+}
