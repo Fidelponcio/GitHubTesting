@@ -175,7 +175,7 @@ box-shadow: 12.5px 0px black,
                 5px 5px 5px 1.5px inset hsl(55, 100%, 75%),
                 0px 0px 5px 50px inset hsl(61, 91%, 66%),
                 0px 0px 50px 25px  hsl(50, 88%, 76%);
-    transition: margin-left 3s, box-shadow 4.5s;
+    transition: margin-left 3s, box-shadow 6s;
 }
 
 .luna {
