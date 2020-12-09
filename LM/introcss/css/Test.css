@@ -219,3 +219,17 @@ box-shadow: 12.5px 0px black,
 .marco:hover > .luna {
   margin-left:-50px;
 }
+
+
+li {
+  background-color: deepskyblue;
+}
+
+.item {
+  background-color: deeppink;
+}
+
+ul>.item~li {
+  background-color: darkkhaki;
+}
+
