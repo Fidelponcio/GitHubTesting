@@ -3,6 +3,7 @@
   /*--alto: 12rem;*/
   --alto: calc(var(--ancho) / 4 * 3);
   /*--alto calc(3*var(--ancho)/4);   /4*3 = ancho/alto | alto=ancho/(4*3)*/
+--white: white;
 }
 
 body {
