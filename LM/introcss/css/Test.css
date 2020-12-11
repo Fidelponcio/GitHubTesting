@@ -244,18 +244,33 @@ ul>.item~li {
   width:300px;
   background-color: blueviolet;
   border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .cajetilla {
-  background-color: azure;
+  background-image: url(../img/dianaGif.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: transparent;
 }
 
 .cajetilla2 {
-  background-color: aqua;
+  background-image: url(../img/VS.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:50px;
+  background-color: transparent;
 }
 
 .cajetilla3 {
-  background-color:darkred;
+  background-image: url(../img/leonaGif.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: transparent;
 }
 
 .cajeton > .cajetilla {
@@ -277,3 +292,4 @@ ul>.item~li {
 /* [class*="cajetilla"]{
   background-color: rgb(6, 72, 172);
 } */
+
