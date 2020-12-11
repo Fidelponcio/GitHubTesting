@@ -7,6 +7,10 @@
 --alto: 100px;
 }
 
+body {
+  background-color: hsl(200, 25%, 15%);
+}
+
 p {
   margin: 15px;
   background-color: tomato;
@@ -220,7 +224,6 @@ box-shadow: 12.5px 0px black,
   margin-left:-50px;
 }
 
-
 li {
   background-color: deepskyblue;
 }
@@ -230,6 +233,41 @@ li {
 }
 
 ul>.item~li {
-  background-color: darkkhaki;
+  background-color: rgb(243, 228, 14);
 }
 
+.cajeton {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:150px;
+  width:300px;
+  background-color: blueviolet;
+  
+}
+
+.cajetilla {
+  display: inline-block;
+  height: 100px;
+  width: 75px;
+  background-color: azure;
+  margin:5px;
+}
+
+.cajetilla2 {
+  display: inline-block;
+  height: 100px;
+  width: 75px;
+  background-color: aqua;
+  margin:5px;
+}
+
+.cajetilla3 {
+  display: inline-block;
+  height: 100px;
+  width: 75px;
+  background-color:darkred;
+  margin:5px;
+}
+
+div > div
