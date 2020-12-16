@@ -1,0 +1,28 @@
+.cabeceraLogo {
+    background-color: #3599DB;
+    display:flex;
+    align-items: center;
+
+}
+
+.izquierdaHeader {
+    display:inline-block;
+    width:70%;
+
+}
+
+.derechaHeader {
+    display:inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+.fotoLogo {
+    width:50%;
+    vertical-align: middle;
+}
+
+h1 {
+    margin:0;
+    margin-left: 3em;
+}
