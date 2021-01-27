@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color:rgb(216, 154, 21);
+}
+
+.menu {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(155, 143, 143);
+list-style: none;
+text-decoration: none;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: -15rem;
+    transition: margin-top 0.5s ease;
+}
+
+.menu > .menu-item:hover > .submenu {
+margin-top: 0;
+display: flex;
+}
+
+.menu a {
+padding: 0.25rem 1rem;
+display:inline-block;
+}
+
+.submenu > .menu-item {
+width: 100%;
+}
+
+.menu-item:hover>a{
+    background-color: rgb(216, 154, 21);
+    color:rgb(155, 143, 143)
+}
