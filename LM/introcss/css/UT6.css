@@ -12,11 +12,15 @@ justify-content: center;
 background-color: rgb(155, 143, 143);
 list-style: none;
 text-decoration: none;
+position: fixed;
+top: 0;
+width: 100%;
 }
 
 .submenu {
-    display: none;
+    opacity: 0;
     position: absolute;
+    top: 100%;
     flex-direction: column;
     margin-top: -15rem;
     transition: margin-top 0.5s ease;
@@ -24,7 +28,7 @@ text-decoration: none;
 
 .menu > .menu-item:hover > .submenu {
 margin-top: 0;
-display: flex;
+opacity: 100;
 }
 
 .menu a {
