@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de tablas</title>
+    <style>
+      table {
+        border: 1px solid tomato;
+        /* outline: 1px solid lightsalmon; */
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid tomato;
+      }
+
+      th {
+        background-color: tomato;
+        color: white;
+      }
+
+      caption {
+        caption-side: bottom;
+      }
+
+      .producto {
+          background-color: tomato;
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- table>(tr>(td*5))*4 -->
+
+    <table>
+      <colgroup>
+        <col class="producto"/>
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <caption>
+        Histórico de ventas por trimestres en 2020
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Q1</th>
+          <th>Q2</th>
+          <th>Q3</th>
+          <th>Q4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pepinillos</td>
+          <td>123</td>
+          <td>823</td>
+          <td rowspan="2">12</td>
+          <td>323</td>
+        </tr>
+        <tr>
+          <td>Tomato</td>
+          <td>23</td>
+          <td>123</td>
+          <td>213</td>
+        </tr>
+        <tr>
+          <td>Naranjo</td>
+          <td colspan="2">43</td>
+          <td>1321</td>
+          <td>43</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!-- 
+        Histórico de ventas por trimestres en 2020
+
+                Q1      Q2      Q3      Q4
+    Pepinillos  123     823     12312   323  
+    Tomato      23      123     123     213
+    Naranjo     123     43      1321    43
+
+ -->
