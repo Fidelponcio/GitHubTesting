@@ -1,0 +1,34 @@
+td, th {
+    border: 5px solid blue;
+    padding: 0.5rem 1rem;
+}
+
+td:last-child {
+    color:white;
+    background-color: blue;
+}
+
+td:nth-child(1) {
+    color:white;
+    background-color: red;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.vertical {
+    transform: rotate(-90deg);
+}
+
+th:first-child {
+    background-color: deepskyblue;
+}
+
