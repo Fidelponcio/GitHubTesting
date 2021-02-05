@@ -6,9 +6,10 @@
     <title>Document</title>
     <style>
         form {
-            max-width: 300px;
+            max-width: 1000px;
         }
         div {
+            margin-top: 0.5rem;
             margin-bottom: 0.5rem;
         }
 
@@ -17,6 +18,16 @@
             width: 20ch;
             text-align: right;
         }
+
+        .email {
+            display: inline-block;
+            text-align: right;
+        }
+
+        fieldset {
+            margin-bottom: 0.5rem;
+        }
+        
     </style>
 </head>
 <body>
@@ -28,11 +39,64 @@
                 <input id="usuario" type="text" name="usuario_name">
             </div>
             <div>
+                <label class="email">
+                    Email<input id="email" type="email" name="mi_email">
+                </label>
+            </div>
+            <div>
                 <label for="pass">Contraseña</label>
                 <input id="pass" type="password" name="pass_name">
             </div>
-            <input type="submit" value="Iniciar">
-        </fieldset> 
+        </fieldset>
+        
+        <fieldset>
+
+        <label for="fechaNacimiento">Fecha de nacimiento</label>
+        <input id="fechaNacimiento" type="date" name="fechaNacimiento">
+        
+        <label for="horaNacimiento">Hora de nacimiento</label>
+        <input id="horaNacimiento" type="time" name="HoraNacimiento">
+
+        <label for="nHijos">Número de hij@s</label>
+        <input id="nHijos" type="number" name="nHijos">
+            
+            <div>
+                <input id="res" type="checkbox" name="res">
+                <label for="res">Residente en Valladolid</label>
+            </div>
+
+            <div>
+                <input id="nac" type="checkbox" name="nac">
+                <label for="nac">Nacionalidad española</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Identidad sexual</legend>
+
+            <input id="genH" type="radio" name="gen">
+            <label for="gen">Hombre</label>
+            <input id="genM" type="radio" name="gen">
+            <label for="gen">Mujer</label>
+            <input id="genNA" type="radio" name="gen">
+            <label for="gen">N/A</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado civil</legend>
+
+            <input id="estCas" type="radio" name="est">
+            <label for="est">Casad@</label>
+            <input id="estSol" type="radio" name="est">
+            <label for="est">Solter@</label>
+            <input id="estNA" type="radio" name="est">
+            <label for="est">N/A</label>
+
+        </fieldset>
+
+        <input type="submit" value="Iniciar"> 
     </form>
 </body>
 </html>
