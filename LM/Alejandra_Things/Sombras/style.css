@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+.box {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    box-shadow: 4px 8px 20px 8px #FFC312 inset,
+    5px 9px 20px 9px #FFC312;
+    border-radius: 50%;
+    transition: all;
+    float: right;
+}   
+
+.box:hover {
+    background-color: black;
+    overflow: hidden;
+  }
+
+.letras {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: x-small;
+    text-shadow: 2px 5px 2px #FFC312;
+}
+
+@keyframes colorchange {
+    0% { background: rgb(255, 187, 0) }
+    100% { background: white }
+  }
+  
+  .sol {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 20px #FFC312 inset,
+    2px 2px 20px 40px #FFC312;
+    background-color: rgb(255, 187, 0);
+  }
+  
+  .sol:hover {
+    background-color: white;
+    box-shadow: 2px 2px 5px 20px #FFC312 inset,
+    2px 2px 20px 40px #FFC312;
+    width: 150px;
+    height: 150px;
+    transition-property: all;
+    transition-duration: 0.54s;
+    transition-timing-function: ease-in;
+  }

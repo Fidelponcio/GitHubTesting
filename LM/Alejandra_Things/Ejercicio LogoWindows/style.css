@@ -1,0 +1,44 @@
+.centrar {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    float: left;
+}
+
+.logo1 {
+    float: left;
+}
+
+.rojo {
+    background-color:#e74c3c;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.verde {
+    background-color: #27ae60;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.azul {
+    background-color: #3498db;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.amarillo {
+    background-color: #f1c40f;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}

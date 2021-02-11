@@ -1,0 +1,93 @@
+.cabeceraLogo {
+	background-color: #3599DB;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 15px 15px 0 0;
+}
+
+.encabezadoI {
+	display: inline-block;
+	/*width: 70%;*/
+}
+
+.encabezadoD {
+	/*text-align:rigth;*/
+	display: inline-block;
+	/*width: 30%;*/
+}
+
+.fotoLogo {
+	width: 150px;
+	vertical-align: top;
+	border-radius: 15px 15px 0 0;
+}
+
+h1 {
+	margin: 0;
+	margin-left: 3em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0,5em 1em;
+	margin-bottom: 1em;
+}
+
+main {
+	background-color: #ECF0F1;
+	padding: 0.1px;
+}
+
+.postHead {
+	padding: 0.5em 1em;
+	border-left: 5px solid tomato;
+	border-radius: 5px;
+}
+
+.post {
+	background-color: #FAF9FA;
+	width: 70%;
+	margin-top: 1em;
+	margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.7);
+    padding: 0.1px;
+}
+
+.postBody p {
+    padding: 0.5em 1em;
+}
+
+.postBody img {
+    width: 70%;
+    margin:10px auto;
+    display:block;
+}
+
+.tab {
+    padding-left: 2em;
+}
+.comentario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.cuerpoComentario {
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    margin-left: 1em;
+    box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.7);
+}
+
+.imgautor {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 2em;
+    box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.7);
+}

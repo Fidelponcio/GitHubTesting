@@ -1,0 +1,31 @@
+div {
+    display: block;
+    float: left;
+}
+
+.columna1 {
+    width: 200px;
+    height: 200px;
+}
+
+.columna2 {
+    width: 200px;
+    height: 200px;
+}
+
+.columna3 {
+    width: 200px;
+    height: 200px;
+}
+
+.color {
+    width: 200px;
+    height: 200px;
+    background-color: #f1c40f;
+}
+
+.nocolor {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Probando las tablas</title>
+  </head>
+  <body>
+    <!-- table(tr>(td*5))*4 -->
+
+<table>
+    <colgroup>
+    <col span=4> 
+    <col>
+    <col>
+    <col>
+    </colgroup>
+
+    <table>
+        <caption>Histórico de Ventas por trimestres en 2020</caption> <!--Texto descriptivo-->
+      <tr>
+        <thead>
+          <td class="blanco"></td>
+          <th>Ventas</th>
+          <th>Compras</th>
+          <th>Diferencia</th>
+          <th>Cambio</th>
+        </thead>
+      </tr>
+
+      <tbody>
+        <tr>
+          <td class="pepinillo">Pepinillos</td>
+          <td colspan="2">123</td>
+          <td>77+</td>
+          <td>333</td>
+          <td>666</td>
+        </tr>
+        <tr>
+          <td class="tomate">Tomate</td>
+          <td>546</td>
+          <td>879</td>
+          <td>444</td>
+          <td>777</td>
+        </tr>
+        <tr>
+          <td class="naranja">Naranja</td>
+          <td>999</td>
+          <td>156</td>
+          <td>555</td>
+          <td>888</td>
+        </tr>
+      </tbody>
+      <tf>
+          <tr>
+              <td>Total</td>
+              <td>4563453</td>
+              <td>4534553</td>
+              <td>89678</td>
+              <td>786431</td>
+          </tr>
+      </tf>
+    </table>
+  </body>
+</html>
+
+<!--
+        HISTÓRICO: Ventas por trimestres en 2020
+
+                 Q1,       Q2,     Q3,      Q4,
+    Pepinillos  123       776       333     666
+    Tomate      546       879       444     777
+    Naranja     999       156       555     888
+
+-->

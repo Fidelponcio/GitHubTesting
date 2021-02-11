@@ -1,0 +1,37 @@
+.caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.rojo {
+  border-radius: 15%;
+  background-color: red;
+  width: 500px;
+  height: 320px;
+  float: left;
+}
+
+.rojo:hover {
+  border-radius: 80%;
+  background-color: #4834d4;
+  width: 350px;
+  transition: 4s;
+}
+
+.triangulo {
+  border-left: 100px solid white;
+  border-top: 50px solid transparent;
+  border-bottom: 60px solid transparent;
+  margin: 100px 220px;
+ }
+ 
+
+.triangulo:hover {
+  border-left: 100px solid#c7ecee;
+  border-top: 50px solid transparent;
+  border-bottom: 60px solid transparent;
+  margin: 100px 220px;
+  transition: 2s;
+}

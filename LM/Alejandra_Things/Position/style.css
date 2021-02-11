@@ -1,0 +1,96 @@
+/* 
+
+    position: static / relative / absolute / fixed / sticky
+
+    offsets ==> solo tienen sentido para elementos positcionados
+            un elemento está posicionado solo si tiene un position.
+        top
+        bottom
+        left
+        right
+
+    En relative, 
+        La referencia para los offsets es la posición original del elemento.
+        Mantiene el flujo, es decir, mantiene el espacio reservado.
+*/
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+}
+
+.div-1 {
+    background-color: lightcoral;
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-1 .texto {
+    visibility: hidden;
+    width: 120px;
+    background-color:#f1c40f;
+    color: black;
+    text-align: left;
+    border-radius: 3px;
+    padding: 15px 20px;
+    opacity: 75%;
+    box-shadow: 2px 2px 5px;
+    position:absolute;
+}
+
+.div-1:hover .texto {
+    visibility: visible;
+}
+
+.div-2 {
+    background-color: lightgreen;
+    position: absolute;
+    opacity: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.div-3 {
+    background-color: lightsalmon;
+}
+
+.container1 {
+    position:relative;
+    height: 300px;
+    background-color: #1abc9c;
+}
+
+.div-5 {
+    background-color: lightcoral;
+    position: relative;
+    border-radius: 3px;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.div-5 .texto2 {
+    visibility: hidden;
+    width: 120px;
+    background-color:#lightcoral;
+    color: black;
+    text-align: left;
+    border-radius: 3px;
+    padding: 15px 20px;
+    opacity: 75%;
+    box-shadow: 2px 2px 5px;
+    position:absolute;
+}
+
+.div-5:hover .texto2 {
+    visibility: visible;
+}

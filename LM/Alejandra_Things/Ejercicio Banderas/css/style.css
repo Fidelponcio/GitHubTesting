@@ -1,0 +1,60 @@
+html {
+    background-color: #2980b9;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #f1c40f;
+    font-size: 12rem;
+    text-align: center;
+}
+
+.bandera {
+    background-color: #cccccc;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    float: left;
+}
+
+.spain1 {
+    background-color: red;
+    height: 33.33%;
+}
+
+.spain2 {
+    background-color: yellow;
+    height: 33.33%;
+}
+
+.spain3 {
+    background-color: red;
+    height: 33.33%;
+}
+
+.emiratos1 {
+    background-color: red;
+    width: 10.00%;
+    height: 100%;
+    float: left;
+}
+
+.emiratos2 {
+    background-color: green;
+    height: 33.33%;
+}
+
+.emiratos3 {
+    background-color: white;
+    height: 33.33%;
+}
+
+.emiratos4 {
+    background-color: black;
+    height: 33.33%;
+}

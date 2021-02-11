@@ -1,0 +1,21 @@
+:root{
+    --azul:#4CA2E9;
+}
+td, th{
+    text-align: center;
+    padding: 5px;
+}
+.tabla{
+    min-width: 100%;
+    border: 1px solid var(--azul);
+}
+.impar{
+    background: #F1F1F1;
+}
+thead:first-child{
+    background: var(--azul);
+    color: white;
+}
+tbody>tr:hover{
+    background-color: #ABD6F9;
+}
