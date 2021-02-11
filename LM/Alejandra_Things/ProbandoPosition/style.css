@@ -9,13 +9,13 @@
         content:"ESTO SE BORRA";
         position:absolute;
         top: -10rem;
-        background-colr: black;
+        background-color: black;
         left: 30px;
     }
 
     position: static / relative / absolute / fixed / sticky
 
-    offsets ==> solo tienen sentido para elementos positcionados
+    offsets ==> solo tienen sentido para elementos posicionados
             un elemento está posicionado solo si tiene un position.
         top
         bottom
@@ -71,8 +71,32 @@
     position:absolute;
 }
 
-
 .div-1:hover .texto {
+    visibility: visible;
+}
+
+.div-5 {
+    background-color: lightcoral;
+    position: relative;
+    border-radius: 3px;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-5 .texto2 {
+    visibility: hidden;
+    width: 120px;
+    background-color:lightcoral;
+    color: black;
+    text-align: left;
+    border-radius: 3px;
+    padding: 15px 20px;
+    opacity: 75%;
+    box-shadow: 2px 2px 5px;
+    position:absolute;
+}
+
+.div-5:hover .texto2 {
     visibility: visible;
 }
 
@@ -95,30 +119,5 @@
     background-color: #1abc9c;
 }
 
-.div-5 {
-    background-color: lightcoral;
-    position: relative;
-    border-radius: 3px;
-    margin-left: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.div-5 .texto2 {
-    visibility: hidden;
-    width: 120px;
-    background-color:lightcoral;
-    color: black;
-    text-align: left;
-    border-radius: 3px;
-    padding: 15px 20px;
-    opacity: 75%;
-    box-shadow: 2px 2px 5px;
-    position:absolute;
-}
-
-.div-5:hover .texto2 {
-    visibility: visible;
-}
 
 
