@@ -6,7 +6,7 @@ td, th{
     padding: 5px;
 }
 .tabla{
-    min-width: 100%;
+    width: 100%;
     border: 1px solid var(--azul);
 }
 .impar{
