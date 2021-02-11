@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top:2rem;
+}
+
+.usuarios {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: tomato;
+}
+
+table {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-collapse: collapse;
+    border-radius: 5px;     
+}
+
+.usuarios:hover > table{
+    visibility: visible;
+}
+
+th {
+    background-color: rgb(136, 43, 27);
+}
+
+tr > td {
+    background-color: rgb(14, 94, 185);
+}

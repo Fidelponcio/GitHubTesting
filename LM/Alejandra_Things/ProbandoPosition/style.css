@@ -118,6 +118,17 @@
     height: 300px;
     background-color: #1abc9c;
 }
-
-
+.texto {
+    margin-left: 1em;
+}
+.texto::after {
+    content: "";
+    position: absolute;
+    background-color:#f1c40f; /*RECOMENDABLE OTRO COLOR PARA DISTINGUIRLO*/
+    height: 15px;
+    width: 15px;
+    transform: rotate(45deg);
+    top: 10px;
+    left: -7px;
+}
 
