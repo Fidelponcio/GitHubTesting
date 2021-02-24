@@ -1,21 +1,49 @@
-:root{
-    --azul:#4CA2E9;
+body {
+    background-color: #dfdfdf;
 }
-td, th{
+
+.todo {
+    border: 2.5px solid #4FA9EA; 
+    
+}
+
+th, td {
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
-.tabla{
-    width: 100%;
-    border: 1px solid var(--azul);
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;  
+    
 }
-.impar{
+
+.white {
+    background: white;
+}
+
+.grey {
     background: #F1F1F1;
 }
-thead:first-child{
-    background: var(--azul);
+thead {
+    background: linear-gradient(#54B2EA, #3D80E7);
     color: white;
 }
-tbody>tr:hover{
+tbody > tr:hover{
     background-color: #ABD6F9;
 }
+
+.img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+}
+
+
+

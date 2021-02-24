@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- url del programa que va a procesar el formulario -->
+    <form action="processform.php" method="GET">
+      <fieldset>
+        <!-- AGRUPAR EN UN CUADRO -->
+        <legend>Datos de inicio</legend>
+        <div>
+          <label for="usuario">Nombre: </label>
+          <input id="usuario" type="text" name="user" />
+        </div>
+        
+        <div>
+            <label>
+                E-mail
+            <input id="email" type="email" name="email" />
+            </label>
+        </div>
+        
+        <div>
+          <label for="password">Contraseña </label>
+          <input id="password" type="text" name="pass" />
+        </div>
+        <!-- ID es como una clave primaria. Name="", id=""-->
+        <div>
+          Sexo: <input type="radio" name="hm" required /> Hombre
+          <input type="radio" name="hm" required /> Mujer
+          <input type="radio" name="hm" required /> Perro
+        </div>
+        <div><input type="checkbox" name="check" id="check" required> <label for="check"> He leído los términos y condiciones de uso. </label>
+             
+        </div>
+        <div><input type="submit" value="Enviar" /></div>
+      </fieldset>
+    </form>
+  </body>
+</html>
