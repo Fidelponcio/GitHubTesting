@@ -7,6 +7,8 @@ body {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 th, td {
@@ -17,7 +19,6 @@ th, td {
     margin-left: auto;
     margin-right: auto;
     width: 100%;  
-    
 }
 
 .white {
@@ -30,6 +31,7 @@ th, td {
 thead {
     background: linear-gradient(#54B2EA, #3D80E7);
     color: white;
+    margin: 0;
 }
 tbody > tr:hover { 
     background-color: #ABD6F9;
@@ -48,7 +50,21 @@ tbody > tr:hover {
     padding: 15px;
 }
 
-/* Falta hacer que no haga hover las tr de .down y poner los bordes*/
+.tabledown, .tabledown td {
+    border: 2.5px solid #888686;
+    border-collapse: collapse;
+    background-color: #ABD6F9;
+}
+
+.tabledown  td:nth-child(3){
+    background-color: white;
+}
+
+.tabledown td:first-child, .tabledown td:nth-child(2){
+    color:white;
+}
+
+/* quitar los borders left y right de la tabla */
 
 
 
