@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios+JS</title>
+
+    <style>
+        .increíble {
+            color: tomato;
+        }
+    </style>
+
+    <script>
+        function actualizar() {
+            personas=["Jacinto", "Jose", "Ana", "Claudia", "Pepi", "Anabel"];
+            // SELECT nombre FROM personas;
+
+
+            radio= document.getElementById("radio").value;
+            longitud= (2 * Math.PI * radio).toFixed(2);
+            a= (Math.PI * radio * radio).toFixed(2);
+            document.getElementById("longitud").value = longitud + ' metros'; 
+            document.getElementById("are").value = a + ' metros'; 
+            if (radio==3) {
+                document.getElementById("labomba").innerHTML='<div class="increíble">Lo flipas</div>'; 
+            } else {
+                document.getElementById("labomba").innerHTML=''; 
+            }
+
+            //Esto no tiene nada que ver con la actualización del ejercicio de radios
+            salida = "<table><tr><th>Nombre</th></tr>";
+            for (i= 0; i < personas.length; i++) {
+                salida += "<tr><td>"+personas[i]+"</td></tr>";
+            } 
+            salida += "</table>";
+            document.getElementById("usuarios").innerHTML=salida;
+        }
+    </script>
+
+</head>
+<body>
+    <form id="radios">
+        <label>Introduzca el radio: </label>
+        <input type="number" id="radio" step="any" onchange="actualizar();">
+        <fieldset>
+            <legend>Resultados</legend>
+            <div>
+                <label for="are">Área del círculo</label>
+                <output id="are">Aquí saldrá el resultado del área</output>
+            </div>
+            <div>
+                <label for="longitud">Área de la circunferencia</label>
+                <output id="longitud">Aquí saldrá el resultado de la longitud</output>
+            </div>
+            <div id="labomba"></div>
+        </fieldset>
+    </form>
+    <div id="usuarios">Esto se va a borrar</div>
+</body>
+</html>
+
