@@ -1,3 +1,7 @@
+:root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     background-color: #dfdfdf;
 }
@@ -62,6 +66,15 @@ tbody > tr:hover {
 
 .tabledown td:first-child, .tabledown td:nth-child(2){
     color:white;
+}
+
+label {
+    margin-left: 2rem;
+}
+
+.up_input {
+    background-color: #F1F1F1;
+    padding: 0.5rem;
 }
 
 /* quitar los borders left y right de la tabla
