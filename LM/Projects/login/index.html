@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/ Log-in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <form action=".php" method="GET">
+    <fieldset>
+        <legend>Registro</legend>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="nickname">Nickname</label>
+            <input type="text" id="nickname">
+        </div>
+        <div>
+            <label for="pw_r">Password</label>
+            <input type="pass" id="pw_r">
+        </div>
+        <div>
+            <label for="+18">Are you at at least 18 years old?</label>
+            <input required type="checkbox" id="+18">
+        </div>
+        <button>Register</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Log-in</legend>
+        <div>
+            <label for="email_nn">E-mail / Nickname</label>
+            <input type="email text" id="email_nn">
+        </div>
+        <div>
+            <label for="pw_l">Password</label>
+            <input type="pass" id="pw_l">
+        </div>
+        <button>Log-in</button>
+    </fieldset>
+
+</form>
+</div>
+</body>
+</html>
