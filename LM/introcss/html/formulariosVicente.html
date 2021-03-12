@@ -108,7 +108,7 @@
         <input type="date" name="fechaNacimiento" id="fechaNacimiento" /> Hora
         de nacimiento
         <input type="time" name="horaNacimiento" id="horaNacimiento" /> Número
-        de hijos <input value="8" type="number" min="4" max="99" class="numeros" name="numHijos" id="numHijos"/>
+        de hijos <input value="8" type="number" min="4" max="99" step="any" class="numeros" name="numHijos" id="numHijos"/>
         <div>
           <input type="checkbox" name="res" id="res" />
           <label for="res">Residente en Valladolid</label>
@@ -117,7 +117,7 @@
         </div>
       </fieldset>
       <input type="range" min="9" max="21" step="3" id="rango">
-      <fieldset></fieldset>
+      <fieldset>
         <div>
           <input type="radio" name="gen" id="gen-hombre" />
           <label for="gen-hombre">Hombre</label>
@@ -131,6 +131,7 @@
           <label for="gen-na">N/A</label>
         </div>
         <legend>Identidad sexual</legend>
+      </fieldset>
       </fieldset>
       <fieldset>
         <legend>Estado civil</legend>

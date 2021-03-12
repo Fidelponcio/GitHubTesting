@@ -1,0 +1,219 @@
+/* Definición de variables */
+:root {
+    --bg-color-header: #16a085;
+    --bg-color-header-shadow: #0b524377;
+    --bg-color-nav: #34495e;
+    --bg-color-main: #2c3e50;
+    --bg-color-accent: #e74c3c;
+    --bg-color-thead: #7f8c8d;
+    --bg-color-par: #34495e80;
+    --text-main: #FFF;
+    --link-color: #FFF;
+    --menu-width: 15rem;
+}
+
+/* Reseteo básico de estilos */
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+/* Cabecera principal de la página. Uso clases porque podría haber varios elementos <header> */
+.main-header {
+    height: 4rem;
+    background-color: var(--bg-color-header);
+    padding: 1em 1em;
+    box-shadow: -2px -2px 5px 1px var(--bg-color-header-shadow) inset;
+}
+
+/* No uso clases porque no debería haber más de un main ni más de un nav, aunque hay quien recomendaría usarlas aquí también */
+nav, main {
+    position: fixed;
+    top: 4rem;
+}
+
+nav {
+    height: calc(100vh - 4rem);
+    left: 0;
+    width: var(--menu-width); /* reservo ancho */
+    background-color: var(--bg-color-nav);
+    box-shadow: -2px -2px 5px 5px var(--bg-color-main) inset;
+}
+
+main {
+    left: var(--menu-width);
+    width: calc(100vw - var(--menu-width)); /* el resto del ancho */
+    min-width: 30rem; /* pero por lo menos que quepan 30 rems */
+    min-height: calc(100vh - 4rem); /* quiero que el main al menos ocupe todo el alto visible; puede que más... */
+    background-color: var(--bg-color-main);   
+}
+
+.menu {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.menu > li > a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: .5em 1em;
+    border-left: 4px transparent solid; /* reservamos el hueco aunque no se vea: así no varía el tamaño en el hover */
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    border-left: 4px var(--bg-color-accent) solid;
+}
+
+.menu > li:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 97%; /* evitamos que pise la sombra */
+    background-color: var(--bg-color-accent);
+    border-radius: 3px;
+}
+
+.menu > li:last-child > a {
+    text-align: center;
+    border-left: 0; /* tenía el borde del hover que descuadra el centrado */
+}
+
+.selected::after{ /* marcamos la opción de menú seleccionada */
+    content: "<";
+    position: absolute;
+    right: 1rem;
+}
+
+.results, .filters, #formularios {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.filters {
+    margin-top: 2rem; /* quiero separar un poco más la primera caja del main respecto del header */
+    padding: 1rem;
+    background-color: var(--bg-color-nav);
+    border-radius: 3px;
+}
+
+.results-table {
+    width: 100%;
+    border-spacing: 2px;
+}
+
+
+.results-table th {
+    padding: .5em 1em;
+    background-color:var(--bg-color-thead);
+    border-radius: 3px;
+}
+
+.results-table td {
+    padding: .5em 1em;
+    background-color: var(--bg-color-nav);
+    border-radius: 1px;
+}
+
+.results-table .par > td {
+    background-color: var(--bg-color-par)
+}
+
+
+/* Css additions */
+
+
+div {
+    margin: 1rem;
+}
+
+.etiqueta {
+    display: inline-block;
+    width: 20ch;
+    text-align: left;
+    margin-right: -2rem;
+}
+
+legend {
+    margin-left: 0.5rem;
+}
+
+.filtro1 input  {
+    width: 15ch;
+    height:25px;
+}
+
+.filtro1 select {
+height: 25px;
+}
+
+.filtro1 textarea {
+    height: 25px;
+    bottom: 0;
+}
+
+fieldset {
+    margin:0.5rem;
+}
+
+#formularios {
+    background-color: var(--bg-color-nav);
+    padding: 1rem;
+    max-width: 95%;
+    margin: 2rem 2rem; 
+}
+
+textarea {
+    display: inline-block;
+    resize: none;
+    vertical-align: middle;
+}
+
+.button {
+    padding: .5rem 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: linear-gradient(var(--bg-color-header), black);
+}
+
+
+header {
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+}
+
+.menu, main {
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hover:hover {
+    font-weight: bold;
+}
+
+ul span {
+    padding-right: 10px;
+}
+
+tr {
+    text-align: left;
+}
+

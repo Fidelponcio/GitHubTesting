@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de formularios y texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1>SCA - Inventario de productos</h1>
+  </header>
+  <nav>
+    <ul class="menu">
+        <li><a href="#"><span class="material-icons-outlined">shopping_cart</span>Solicitudes de compra</a></li>
+        <li><a class="selected" href="#"><span class="material-icons-outlined">inventory</span>Inventario</a></li>
+        <li><a href="#"><span class="material-icons-outlined">summarize</span>Informe de entradas</a></li>
+        <li><a href="#"><span class="material-icons-outlined">outbox</span>Informe de salidas</a></li>
+        <li><a href="#"><span class="material-icons-outlined">engineering</span>Mantenimiento</a></li>
+        <li><a class="hover" href="#">Abrir ticket de soporte</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- <div class="filters">
+      Aquí deben ir los campos para hacer el filtro.
+    </div> -->
+    <div id="formularios">
+        <form action="#" >
+            <fieldset class="filtro1">
+                <legend><span class="material-icons-outlined">filter_alt</span></legend>
+                <div>
+                    <label class="etiqueta" for="id">Por ID:</label>
+                    <input placeholder="Introduce un ID..." type="text" id="id">
+                </div>
+                <div>
+                    <label class="etiqueta" for="">Por texto:</label>
+                    <select name="dp1" id="dp1">
+                        <option>Artículo</option>
+                        <option>Descripción</option>
+                        <option selected>Artículo y descripción</option>
+                    </select>
+                    <select name="dp2" id="dp2">
+                        <option selected>Coincide con</option>
+                        <option>No coincide con</option>
+                        <option>Contiene a</option>
+                        <option>No coincide a</option>
+                    </select>
+                    <textarea placeholder="Introduce un texto"  cols="30" rows="1"></textarea>
+                </div>
+                <div>
+                    <label class="etiqueta" for="lim_inf">PVP entre:</label>
+                    <input placeholder="Lím. inferior" type="text" id="lim_inf" name="lim_inf">
+                    <input placeholder="Lím. superior" type="text" id="lim_sup" name="lim_sup">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Disponibilidad</legend>
+                <div>
+                    <input type="radio" name="dis" id="dis_1">
+                    <label for="dis_1">Todos los productos</label>
+                </div>
+                <div>
+                    <input type="radio" name="dis" id="dis_2">
+                    <label for="dis_2">Productos en Stock</label>
+                </div>
+                <div>
+                    <input type="radio" name="dis" id="dis_3">
+                    <label for="dis_3">Productos sin Stock</label>
+                </div>
+            </fieldset>
+            <input class="button" type="submit" value="Aplicar" />
+        </form>
+    </div>
+    <div class="results">
+      <table class="results-table">
+        <tr>
+          <th>ID</th>
+          <th>Artículo</th>
+          <th>Descripción</th>
+          <th>PVP</th>
+          <th>Stock</th>
+        </tr>
+        <tr>
+          <td>I997</td>
+          <td>Vendaje hidrófobo</td>
+          <td>Vendaje de 50x530cm en pack de 3</td>
+          <td>23€</td>
+          <td>15</td>
+        </tr>
+        <tr class="par">
+          <td>JB97</td>
+          <td>Agua oxigenada</td>
+          <td>Bote de agua oxigenada de 50cl</td>
+          <td>5€</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>IN78</td>
+          <td>Tijeras precisión</td>
+          <td>Tijeras con recubrimiento de titanio</td>
+          <td>51€</td>
+          <td>9</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
