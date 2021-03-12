@@ -154,15 +154,18 @@ legend {
 .filtro1 input  {
     width: 15ch;
     height:25px;
+    color: var(--bg-color-main);
 }
 
 .filtro1 select {
 height: 25px;
+color: var(--bg-color-main);
 }
 
 .filtro1 textarea {
     height: 25px;
     bottom: 0;
+    color: var(--bg-color-main);
 }
 
 fieldset {
