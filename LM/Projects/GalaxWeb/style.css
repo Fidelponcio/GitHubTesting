@@ -38,13 +38,19 @@ h1 {
     height: 4rem;
     background-color: var(--bg-color-header);
     padding: 1em 1em;
-    box-shadow: -2px -2px 5px 1px var(--bg-color-header-shadow) inset;
+    /* box-shadow: -2px -2px 5px 1px var(--bg-color-header-shadow) inset; */
 }
 
 /* No uso clases porque no debería haber más de un main ni más de un nav, aunque hay quien recomendaría usarlas aquí también */
 nav, main {
     position: fixed;
     top: 4rem;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
 }
 
 nav {
@@ -102,24 +108,28 @@ main {
     right: 1rem;
 }
 
-.results, .filters, #formularios {
-    margin-bottom: 1rem;
+.results,  #formularios{
+    margin-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
+    overflow-x: auto; /* Scroll en tabla */
 }
 
 
 
-.filters {
-    margin-top: 2rem; /* quiero separar un poco más la primera caja del main respecto del header */
+/* .filters {
+    margin-top: 2rem;  quiero separar un poco más la primera caja del main respecto del header 
     padding: 1rem;
     background-color: var(--bg-color-nav);
     border-radius: 3px;
-}
+} */
+
+/* table, td, th {
+    border: 1px solid black;
+} */
 
 .results-table {
-    width: 100%;
     border-spacing: 2px;
 }
 
@@ -127,23 +137,21 @@ main {
 .results-table th {
     padding: .5em 0.5em;
     background-color:var(--icon-color);
-    border-radius: 3px;
     white-space: nowrap;
 }
 
 .results-table td{
     padding: .5em 1em;
     background-color: var(--bg-color-nav);
-    border-radius: 1px;
     
 }
 
-/* .results-table td {
+.results-table td {
     padding: .5em 1em;
     overflow:hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
-} */
+}
 
 .results-table .par > td {
     background-color: var(--bg-color-par)
@@ -162,6 +170,10 @@ div {
     width: 20ch;
     text-align: left;
     margin-right: -2rem;
+}
+
+#fec_ul_con, #fec_registro {
+    margin: 0 1rem;
 }
 
 legend {
@@ -198,7 +210,7 @@ option, .campos_pers {
     background-color: var(--bg-color-nav);
     padding: 1rem;
     max-width: 95%;
-    margin: 2rem 2rem; 
+    margin: 2rem; 
 }
 
 textarea {
