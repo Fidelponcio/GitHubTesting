@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de administrador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1>Administración GalaxWeb</h1>
+  </header>
+  <nav>
+    <ul class="menu">
+        <li><a href="#"><span class="material-icons-outlined">shopping_cart</span>Gestión</a></li>
+        <li><a class="selected" href="#"><span class="material-icons-outlined">search</span>Búsqueda</a></li>
+        <li><a href="#"><span class="material-icons-outlined">summarize</span>Detalles de jugador</a></li>
+        <li><a href="#"><span class="material-icons-outlined">engineering</span>Configuración</a></li>
+        <li><a class="hover" href="#">Desconectar</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- <div class="filters">
+      Aquí deben ir los campos para hacer el filtro.
+    </div> -->
+    <div id="formularios">
+        <form action="#" >
+            <fieldset class="filtro1">
+                <legend><span class="material-icons-outlined">search</span></legend>
+                <div>
+                    <label class="etiqueta" for="id">Por ID:</label>
+                    <input placeholder="Introduce un ID..." type="text" id="id">
+                </div>
+                <div>
+                    <label class="etiqueta" for="">Por estados:</label>
+                    <select name="dp1" id="dp1">
+                        <option>Todos</option>
+                        <option>Conectado</option>
+                        <option>Desconectado</option>
+                        <option selected></option>
+                    </select>
+                    <select name="dp2" id="dp2">
+                        <option selected>Todos</option>
+                        <option>No VIP</option>
+                        <option>VIP</option>
+                        <option selected></option>
+                    </select>
+                    <select name="dp1" id="dp1">
+                      <option>Bloqueado</option>
+                      <option>No bloqueado</option>
+                      <option selected></option>
+                  </select>
+                </div>
+                <div>
+                    <label class="etiqueta" for="lim_inf">PVP entre:</label>
+                    <input placeholder="Lím. inferior" type="number" min="1" step="any" id="lim_inf" name="lim_inf">
+                    <input placeholder="Lím. superior" type="number" max="1000" step="any" id="lim_sup" name="lim_sup">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Campos a mostrar</legend>
+                <div>
+                    <input type="radio" name="dis" id="dis_1">
+                    <label for="dis_1">Todos los campos</label>
+                </div>
+                <div>
+                    <input type="radio" name="dis" id="dis_2">
+                    <label for="dis_2">Solo PRIMARY KEY</label>
+                </div>
+                <div>
+                    <input type="radio" name="dis" id="dis_3">
+                    <input class="campos_pers" type="text">
+                </div>
+            </fieldset>
+            <input class="button" type="submit" value="Aplicar" />
+        </form>
+    </div>
+    <div class="results">
+      <table class="results-table">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido 1</th>
+          <th>País</th>
+          <th>E-mail</th>
+          <th>Última conexión</th>
+          <th>Conectado</th>
+          <th>VIP</th>
+          <th>Bloqueado</th>
+          <th>Registro</th>
+        </tr>
+        <tr>
+          <td>0001</td>
+          <td>Juanito</td>
+          <td>Hernández</td>
+          <td>EEUU</td>
+          <td>qweqwe@qweqwe.com</td>
+          <td>2021/03/13</td>
+          <td>Sí</td>
+          <td>Sí</td>
+          <td>No</td>
+          <td>2015/01/01</td>
+        </tr>
+        <tr class="par">
+          <td>0002</td>
+          <td>Ben</td>
+          <td>Ten</td>
+          <td>EEUU</td>
+          <td>Yetix@boing.es</td>
+          <td>2020/02/01</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Sí</td>
+          <td>2020/01/15</td>
+        </tr>
+        <tr>
+          <td>0003</td>
+          <td>Paco</td>
+          <td>Sanz</td>
+          <td>España</td>
+          <td>difacil@auronplay.es</td>
+          <td>2021/03/01</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>2020/08/12</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
+
