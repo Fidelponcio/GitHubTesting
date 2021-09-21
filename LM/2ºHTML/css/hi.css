@@ -1,0 +1,15 @@
+* {
+font-family: monospace;
+font-size: 20px;
+}
+
+body {
+    background-color: hsl(200, 25%, 15%);
+    color:hsl(69, 86%, 34%);
+    margin: 2ch;
+    padding: 2ch;
+    border: .25em solid;
+    border-radius: 50px;
+    
+}
+
