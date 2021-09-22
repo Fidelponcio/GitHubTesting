@@ -6,14 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/hi.css">
     <title>Hello</title>
+    <style>
+        table {
+          border: 1px solid tomato;
+          /* outline: 1px solid lightsalmon; */
+          border-collapse: collapse;
+          margin: 15px;
+        }
+  
+        td {
+          border: 1px solid tomato;
+        }
+  
+        th {
+          background-color: tomato;
+          color: white;
+        }
+  
+        caption {
+          caption-side: bottom;
+        }
+  
+        .producto {
+            background-color: tomato;
+            color: white;
+        }
+  
+        .yellow > td {
+          background-color: yellow;
+        }
+  
+      </style>
 </head>
 <body>
+    <table>
+        <colgroup>
+          <col class="producto"/>
+          <col />
+          <col />
+          <col class=""/>
+          <col />
+        </colgroup>
+        <caption>
+          Histórico de ventas por trimestres en 2020
+        </caption>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pepinillos</td>
+            <td>123</td>
+            <td>823</td>
+            <td rowspan="2">12</td>
+            <td>323</td>
+          </tr>
+          <tr>
+            <td>Tomato</td>
+            <td>23</td>
+            <td>123</td>
+            <td>213</td>
+          </tr>
+          <tr class="yellow">
+            <td>Naranjo</td>
+            <td colspan="2">43</td>
+            <td>1321</td>
+            <td>43</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+          </tr>
+        </tfoot>
+      </table>
+    <a href="https://youtube.com">YouTube</a>
+    <form action="processform.php" method="GET">
+        <fieldset>
+            <legend>Datos de inicio</legend>
+            <div>
+                <label for="usuario">Nombre de usuario</label>
+                <input id="usuario" type="text" name="usuario_name">
+            </div>
+            <div>
+                <label class="email">
+                    Email<input id="email" type="email" name="mi_email">
+                </label>
+            </div>
+            <div>
+                <label for="pass">Contraseña</label>
+                <input id="pass" type="password" name="pass_name">
+            </div>
+        </fieldset>
     <div>Yeray Rubner Calvo</div>
     <div>25/02/2000</div>
     <br>
-    <div>Nivel de HTML/CSS: No recuerdo nada, W3Schools es mi amigo.</div>
+    <h1>Nivel de HTML/CSS: No recuerdo nada, W3Schools es mi amigo.</h1>
     <br>
-    <h1>Mis objetivos serían:</h1>
+    <h2>Mis objetivos serían:</h2>
     <ul>
         <li>Aprobar Programación de 1º.</li>
         <li>Terminar estos estudios y poder vivir de algo relacionado con la Informática que me llame la atención.</li>
