@@ -1,24 +1,76 @@
 * {
     font-family: monospace;
-    font-size: 25px;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
     }
 
     body {
-        background-color: #8EC5FC;
-        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-        color: rgb(0, 4, 36);
-        text-align: center;
-        padding-top: 25px;
+        width: 100%;
+        background-image: url("../img/wood.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(32, 170, 124);
+        text-align: center;  
     }
 
     img {
         border-radius: 50px;
+        width: 40%;
+    }
+
+    .pv {
+        display: inline-block;
     }
 
     div {
         margin: 10px;
     }
 
-    .pv {
-        display: inline-block;
+    header {
+        position: sticky;
+        top: 0;
+        background-color: black;
+  }
+
+  .menu {
+    display:flex;
+    list-style: none;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+    nav a{
+        text-decoration:none;
+        color:rgb(32, 170, 124);
+        font-size:.75rem;
+        }
+
+    nav li{
+    list-style: none;
+    width:175px;
+    height:40px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    transition: 1s;   
     }
+            
+    nav li:hover{
+        background-color:#3a284e;
+        border-radius: 75px;
+        }
+            
+    nav li>ul{
+        display:none;
+        }
+
+    nav li:hover>ul{
+        display:block;
+        position:absolute;
+        top:40px;
+    }
+    
