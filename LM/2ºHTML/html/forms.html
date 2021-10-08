@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        div {
+            margin-bottom: 0.5rem;
+        }
+        .etiqueta {
+        display: inline-block;
+        width: 20ch;
+        text-align: right;
+      }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+      <fieldset>
+        <legend>Datos de inicio</legend>
+        <div>
+          <label class="etiqueta" for="usuario">Nombre de usuario</label>
+          <input id="usuario" type="text" name="usuario_name" />
+        </div>
+        <div>
+          <label class="etiqueta" for="pass">Contraseña</label>
+          <input id="pass" type="password" name="pass_name" />
+        </div>
+        <div>
+            <label class="etiqueta" for="email">E-mail</label>
+            <input id="email" type="email" name="email">
+        </div>
+            <label class="etiqueta" for="provincias">Provincia</label>
+            <input type="text" list="listaProvincias" id="provincias">
+            <datalist id="listaProvincias">
+              <option>Valladolid</option>
+              <option>Valencia</option>
+              <option>Teruel</option>
+              <option>Toledo</option>
+              <option>Zaragoza</option>
+              <option>Zamora</option>
+              <option>Palencia</option>
+              <option>León</option>
+            </datalist>
+      </fieldset>
+      <fieldset>
+          <legend>Identidad sexual</legend>
+        <div>
+          <input type="radio" name="gen" id="gen-hombre" />
+          <label for="gen-hombre">Hombre</label>
+        </div>
+        <div>
+          <input type="radio" name="gen" id="gen-mujer" />
+          <label for="gen-mujer">Mujer</label>
+        </div>
+        <div>
+          <input type="radio" name="gen" id="gen-na" />
+          <label for="gen-na">Prefiero no decirlo</label>
+        </div>
+      </fieldset>
+      <div>
+      <input type="checkbox" name="EdA" id="EdA" />
+        <label for="res">Estoy de acuerdo</label>
+      </div>
+        <input class="top" type="submit" value="Iniciar" />
+</body>
+</html>

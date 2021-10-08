@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <style>
+        div {
+            margin-bottom: 0.5rem;
+        }
+        .etiqueta {
+        display: inline-block;
+        width: 20ch;
+        text-align: right;
+      }
+      input {
+          width:200px;
+      }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Fecha & Horas</legend>
+        <div>
+            <label class="etiqueta" for="fecha">Fecha</label>
+            <input type="date" value="2001-01-01" name="fecha" id="fecha" /> 
+        </div>
+        <div>
+            <label class="etiqueta" for="hora">Fecha</label>
+            <input type="time" value="16:00" name="hora" id="hora" /> 
+        </div>
+        <div>
+            <label class="etiqueta" for="fechaHora">Fecha y hora</label>
+            <input type="datetime" value="" name="fechaHora">
+        </div>
+        <div>
+            <label class="etiqueta" for="fechaHoraLocal">Fecha y hora local</label>
+            <input type="datetime-local" value="2001-01-01T16:00" class="fechaHoraLocal">
+        </div>
+        <div>
+            <label class="etiqueta" for="mes">Mes</label>
+            <input type="month" value="2001-01" class="mes">
+        </div>
+        <div>
+            <label class="etiqueta" for="semana">Semana</label>
+            <input type="week" value="2001-W30" class="semana">
+        </div>
+      </fieldset>
+</body>
+</html>
