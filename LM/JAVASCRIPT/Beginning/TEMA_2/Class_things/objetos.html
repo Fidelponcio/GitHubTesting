@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Persona {
+            constructor(iden, edad, casado, direccion) {
+            this.iden = iden;
+            this.edad = edad;
+            this.casado = casado;
+            this.direccion = direccion;
+            }
+        }
+
+        function Trabajador (puesto, departamento, iden, edad, casado, direccion){
+            Persona.call(this, iden, edad, casado, direccion);
+            this.puesto= puesto;
+            this.departamento= departamento;
+        }
+
+        Trabajador.prototype = Object.create(Persona.prototype);
+        Trabajador.prototype.constructor = Persona;
+        let trabajador= new Trabajador("jefe", "comercial", "pepe", 23, true, "xxxxxxxx");
+      //Trabajador.prototype= new Persona ("pepe", 23, true, "xxxxxxxxxxxxxxxx");
+        //let trabajador= new Trabajador ("jefe", "comercial");
+
+        /*class Numeros {
+	        constructor(valor) {
+		        this.base = valor
+		        this.potencia = 0
+	        }
+        }*/
+
+        /*Numeros.prototype.cuadrado= function(){
+            this.potencia = this.base ** 2
+		    console.log(this.potencia)
+        }
+
+        let numero1= new Numeros(5);
+        numero1.cuadrado();*/
+        debugger;
+
+    </script>
+</body>
+</html>
