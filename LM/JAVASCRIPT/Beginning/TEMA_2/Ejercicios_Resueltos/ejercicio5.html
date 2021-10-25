@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sPrompt;
+      var x = new Boolean(false);
+      const MIN = -1;
+      const MAX = 100000000;
+      do {
+        sPrompt = prompt("Teclea un numero de documento");
+        if (sPrompt == null) {
+          x = !!false;
+        } else if (sPrompt == "") {
+        } else {
+          if (isNaN(sPrompt)) {
+          } else {
+            let num = sPrompt;
+            if (num > MIN && num < MAX) {
+              x = !!false;
+              const elDNI = function dni(num) {
+                let resto;
+                var letras = [
+                  "T",
+                  "R",
+                  "W",
+                  "A",
+                  "G",
+                  "M",
+                  "Y",
+                  "F",
+                  "P",
+                  "D",
+                  "X",
+                  "B",
+                  "N",
+                  "J",
+                  "Z",
+                  "S",
+                  "Q",
+                  "V",
+                  "H",
+                  "L",
+                  "C",
+                  "K",
+                  "E",
+                  "T",
+                ];
+                resto = num % 23;
+
+                return num + letras[resto];
+              };
+              alert("El DNI completo es: " + elDNI(num));
+              console.log(elDNI(num));
+            }
+          }
+        }
+      } while (x);
+    </script>
+  </body>
+</html>

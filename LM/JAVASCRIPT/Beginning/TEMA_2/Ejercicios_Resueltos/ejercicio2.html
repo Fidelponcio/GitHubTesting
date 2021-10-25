@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sPrompt;
+      let numElementos = 1;
+      let aNum = [];
+      const MAX = 5;
+
+      do {
+        sPrompt = prompt("Teclea el " + numElementos + "º elemento de los " +MAX);
+
+        if (sPrompt == null || sPrompt == "") {
+          // no hago nada
+        } else {
+          if (isNaN(sPrompt)) {
+            alert("No se  ha teclado un numero");
+          } else {
+            aNum.push(sPrompt);
+            numElementos++;
+          }
+        }
+      } while (numElementos <= MAX);
+      
+   
+        console.log("El array tiene %d elementos", numElementos);
+
+        aNum.forEach((elemento) => {
+          console.log(elemento);
+        });
+        let maximo = Math.max(...aNum);
+        let minimo = Math.min(...aNum);
+        console.log("El mayor es: "+maximo+" y el nemor es: "+minimo);
+    </script>
+  </body>
+</html>

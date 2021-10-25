@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sPrompt;
+      let numElementos = 1;
+
+      let aNum = [];
+      do {
+        sPrompt = prompt(
+          "Teclea el " +
+            numElementos +
+            "º elemento del array, Cancelar para terminar"
+        );
+        if (sPrompt == null) {
+          numElementos = numElementos - 1;
+          break;
+        } else if (sPrompt != "") {
+          if (isNaN(sPrompt)) {
+            alert("No se  ha teclado un numero");
+          } else {
+            aNum.push(sPrompt);
+            numElementos++;
+          }
+        } else {
+          // no se ha tecleado ninguin valor
+        }
+      } while (sPrompt != null);
+
+      if (numElementos === 0) {
+        alert("No se haingresado ningun numero al array");
+      } else {
+        console.log("El array tiene %d elementos", numElementos);
+
+        aNum.forEach((elemento) => {
+          console.log(elemento);
+        });
+      }
+    </script>
+  </body>
+</html>

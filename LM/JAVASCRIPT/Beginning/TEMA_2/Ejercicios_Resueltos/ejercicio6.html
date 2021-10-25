@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sPrompt;
+      let peso, altura;
+      let IMC;
+      let condicion = new Boolean(false);
+      do {
+        sPrompt = prompt("Teclea el peso");
+        if (sPrompt == null) {
+          condicion = !!false;
+        } else if (sPrompt == "") {
+        } else {
+          if (isNaN(sPrompt)) {
+            alert("No se ha tecleado bien el peso");
+          } else {
+            peso = sPrompt;
+            condicion =!!false;
+          }
+        }
+      } while (condicion);
+      condicion =!!true;
+
+      do {
+        sPrompt = prompt("Teclea la altura");
+        if (sPrompt == null) {
+          condicion = !!false;
+        } else if (sPrompt == "") {
+        } else {
+          if (isNaN(sPrompt)) {
+            alert("No se ha tecleado bien la altura");
+          } else {
+            altura = sPrompt;
+            condicion =!!false;
+          }
+        }
+      } while (condicion);
+
+      IMC = peso / Math.pow(altura,2);
+      IMC = IMC.toFixed(2);
+     if (IMC<18.5) {
+        console.log("IMC :"+IMC+", Peso Insuficiente.");
+     } else if(IMC>= 18.5 && IMC<25) {
+        console.log("IMC :"+IMC+", Peso Normal.");
+     }else if(IMC >=25 && IMC<27){
+        console.log("IMC :"+IMC+", Sobrepeso grado I.");
+     }else if(IMC >=27 && IMC<30){
+        console.log("IMC :"+IMC+", Sobrepeso grado II.");
+     }else if(IMC >=30 && IMC<35){
+        console.log("IMC :"+IMC+", Obesidad I.");
+     }else if(IMC >=35 && IMC<40){
+        console.log("IMC :"+IMC+", Obesidad II.");
+     }else if(IMC >=40 && IMC<50){
+        console.log("IMC :"+IMC+", Obesidad III(mórbida).");
+     }else{
+        console.log("IMC :"+IMC+", Obesidad III(extrema).");
+     }
+
+    </script>
+  </body>
+</html>

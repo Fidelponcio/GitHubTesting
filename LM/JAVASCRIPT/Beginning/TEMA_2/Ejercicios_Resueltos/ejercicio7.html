@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sPrompt;
+      var aDivisible = [];
+      var x = new Boolean(false);
+      do {
+        sPrompt = prompt("teclea un número, para ver si es primo o no");
+        if (sPrompt == null) {
+          x = !!false;
+        } else if (sPrompt == "") {
+        } else {
+          if (isNaN(sPrompt)) {
+          } else {
+            x = !!false;
+            let num = sPrompt;
+            for (let index = 1; index <= num; index++) {
+              if (num % index == 0) {
+                aDivisible.push(index);
+              }
+            }
+          }
+        }
+      } while (x);
+      if (aDivisible.length == 2) {
+        console.log(sPrompt + " es Primo");
+      }else if(sPrompt==null){
+
+      } 
+      else {
+        let div ="";
+        for (let index = 0; index < aDivisible.length; index++) {
+          div = div+" "+ aDivisible[index];
+        }
+        console.log(sPrompt + " es divisible por " + div);
+      }
+    </script>
+  </body>
+</html>

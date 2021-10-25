@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sPrompt;
+      var x = new Boolean(false);
+      do {
+        sPrompt = prompt("Teclea una talla XXXL, XXL, XL, L, M, S, XS");
+
+        if (sPrompt == null) {
+          x = !!false;
+        } else if (sPrompt == "") {
+          // no hago nada
+        } else {
+          sPrompt = sPrompt.toUpperCase();
+          console.time();
+          switch (sPrompt) {
+            case "XXXL":
+            case "XL":
+            case "XL":
+              console.log("La talla es Extragrande");
+              x = !!false;
+              break;
+            case "L":
+              console.log("La talla es Grande");
+              x = !!false;
+              break;
+            case "M":
+              console.log("La talla es Mediana");
+              x = !!false;
+              break;
+            case "S":
+              console.log("La talla es Pequeña");
+              x = !!false;
+              break;
+            case "L":
+              console.log("La talla es Extrapequeña");
+              x = !!false;
+              break;
+            default:
+              break;
+          }
+        }
+      } while (x);
+      console.timeEnd();
+    </script>
+  </body>
+</html>
