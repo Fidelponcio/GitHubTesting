@@ -29,21 +29,30 @@
 
     <script>
 
+        function validacion(nombreP, cantidadP, precioP){
+            let valido= true;
+            return valido;
+        }
+
         function agregar(){
             //1º Capturar valores de los controles del formulario
             let nombreP= document.getElementById("np").value;
             let precioP= document.getElementById("preciop").value;
             let cantidadP= document.getElementById("cantidadp").value;
-            //2º Instanciar la clase Producto con valores capturados
-            let producto= new Productos (nombreP, precioP, cantidadP);
-    
-            //3º Agregar instancia al array
-            productos.push(producto);
             
-            //Borrar valores de los controles
-            document.getElementById("np").value="";
-            document.getElementById("preciop").value="";
-            document.getElementById("cantidadp").value="";
+            if(validacion()){
+                //2º Instanciar la clase Producto con valores capturados
+                let producto= new Productos (nombreP, precioP, cantidadP);
+                
+                //3º Agregar instancia al array
+                productos.push(producto);
+                
+                //Borrar valores de los controles
+                document.getElementById("np").value="";
+                document.getElementById("preciop").value="";
+                document.getElementById("cantidadp").value="";
+            }
+    
         }
 
         function listar(){
