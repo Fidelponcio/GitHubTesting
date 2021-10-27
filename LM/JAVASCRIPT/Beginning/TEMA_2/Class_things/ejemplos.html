@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Nombre producto</td>
+            <td><input type="text" name="" id="np"></td>
+        </tr>
+        <tr>
+            <td>Precio producto</td>
+            <td><input type="text" name="" id="preciop"></td>
+        </tr>
+        <tr>
+            <td>Cantidad</td>
+            <td><input type="text" name="" id="cantidadp"></td>
+        </tr>
+        <tr>
+            <td><button onclick="agregar()">Agregar producto</button></td>
+            <td><button onclick="listar()">Listar productos</button></td>
+        </tr>
+    </table>
+    <p id="listado"></p>
+
+    <script>
+
+        function agregar(){
+            //1º Capturar valores de los controles del formulario
+            let nombreP= document.getElementById("np").value;
+            let precioP= document.getElementById("preciop").value;
+            let cantidadP= document.getElementById("cantidadp").value;
+            //2º Instanciar la clase Producto con valores capturados
+            let producto= new Productos (nombreP, precioP, cantidadP);
+    
+            //3º Agregar instancia al array
+            productos.push(producto);
+            
+            //Borrar valores de los controles
+            document.getElementById("np").value="";
+            document.getElementById("preciop").value="";
+            document.getElementById("cantidadp").value="";
+        }
+
+        function listar(){
+            let cadena= "<table>";
+            let importeTotal= 0;
+            productos.forEach(producto => {
+                cadena+="<tr>";
+                cadena+=`<td>${producto.nombre}<td>`;
+                cadena+=`<td>${producto.precio}<td>`;
+                cadena+=`<td>${producto.cantidad}<td>`;
+                cadena+="</tr>";
+                importeTotal+=producto.cantidad*producto.precio;
+            });
+            cadena+=`<tr><td>IMPORTE TOTAL</td><td>${importeTotal}</td></tr>`;
+            cadena+="</table>";
+            document.getElementById("listado").innerHTML=cadena;
+        }
+
+        class Productos {
+            constructor(nombre, precio, cantidad){
+            this.nombre= nombre;
+            this.precio= precio;
+            this.cantidad= cantidad;
+            }
+        }
+        let productos = [];
+
+    </script>
+</body>
+</html>
