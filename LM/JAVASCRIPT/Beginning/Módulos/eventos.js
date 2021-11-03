@@ -1,5 +1,6 @@
 import {Producto, Factura} from "./factura.js"
 
+//Declaro array para agregar los productos
 let productos= []
 
 export function agregaProducto() {
