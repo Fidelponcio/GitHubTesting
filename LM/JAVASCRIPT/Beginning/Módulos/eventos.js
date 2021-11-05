@@ -1,17 +1,20 @@
 import {Producto, Factura} from "./factura.js"
-
+import * as formulario from "./formulario.js"
 //Declaro array para agregar los productos
 let productos= []
 
 export function agregaProducto() {
-    let cantidad = document.getElementById("cantidad").value;
-    let precio = document.getElementById("precio").value;
-    let nombre = document.getElementById("producto").value;
-    let producto = new Producto(nombre, precio, cantidad)
+    // let cantidad = document.getElementById("cantidad").value;
+    // let precio = document.getElementById("precio").value;
+    // let nombre = document.getElementById("producto").value;
+    
+    //Controles de producto
+    let producto = new Producto(formulario.nombrep.value, formulario.precio.value, formulario.cantidad.value)
     productos.push(producto);
-    document.getElementById("cantidad").value = "";
-    document.getElementById("precio").value = "";
-    document.getElementById("producto").value = "";
+
+    formulario.nombrep.value = "";
+    formulario.precio.value = "";
+    formulario.cantidad.value = "";
   }
   
 export function obtieneFactura() {
@@ -20,11 +23,12 @@ export function obtieneFactura() {
     let factura = null;
   
     //Captura de valores de fecha, empresa y cliente
-    let fecha = document.getElementById("fecha").value;
-    empresa.nombre = document.getElementById("empresa").value;
-    empresa.cif = document.getElementById("cife").value;
-    cliente.nombre = document.getElementById("cliente").value;
-    cliente.cif = document.getElementById("cifc").value
+    //Control de fecha
+    empresa.fecha= formulario.fecha.value;
+    empresa.nombre = formulario.empresa.value;
+    empresa.cif = formulario.cife.value;
+    cliente.nombre = formulario.cliente.value;
+    cliente.cif = formulario.cifc.value;
   
   
     //instancio Factura con los productos, empresa,  cliente y fecha
