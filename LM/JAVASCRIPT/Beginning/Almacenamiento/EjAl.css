@@ -1,0 +1,44 @@
+* {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.ip {
+    
+    background-color: rgb(104, 104, 104);
+    width: 70%;
+    margin: auto;
+    height: 150px;
+}
+
+label {
+    
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+input{
+    margin-left: 50px;
+}
+
+p {
+    padding: 15px 20px;
+    background-color: rgb(184, 184, 184);
+}
+
+#buscado {
+    background-color: #fff;
+}
+
+
+#btn1{
+    margin-top: 25px;
+    margin-left: 283px;
+}
+/* fieldset {
+    background-color: rgb(104, 104, 104);
+}
+
+legend {
+    background-color: rgb(184, 184, 184);
+} */

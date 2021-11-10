@@ -21,7 +21,7 @@ document.getElementById("btn1").onclick=function(){
             casa: agenda.casa.value,
             trabajo:agenda.trabajo.value
         }*/
-        telefonosA:[
+        telefonos:[
             agenda.movil.value,
             agenda.casa.value,
             agenda.trabajo.value
@@ -39,9 +39,9 @@ document.getElementById("btn2").onclick=function(){
     cadena+= `<p>Población: ${datoFound.direccion.poblacion}</p>`;
     cadena+= `<p>Provincia: ${datoFound.direccion.provincia}</p>`;
 
-    cadena+= `<p>Móvil: ${datoFound.telefonosA[0]}</p>`;
-    cadena+= `<p>Casa: ${datoFound.telefonosA[1]}</p>`;
-    cadena+= `<p>Trabajo: ${datoFound.telefonosA[2]}</p>`;
+    cadena+= `<p>Móvil: ${datoFound.telefonos[0]}</p>`;
+    cadena+= `<p>Casa: ${datoFound.telefonos[1]}</p>`;
+    cadena+= `<p>Trabajo: ${datoFound.telefonos[2]}</p>`;
     
     document.getElementById("buscado").innerHTML= cadena;
     

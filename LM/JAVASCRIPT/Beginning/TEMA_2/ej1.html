@@ -13,6 +13,21 @@
          * Asegurarse de que los elementos del array  son números.
          */
           let array= [];
+          let num= 0;
+          do {
+            num= prompt("Dime un número: ");
+            if (num=='*'){
+
+            } else if (isNaN(num) || num==""){
+            alert("Error, debe introducir un número.");
+
+          } else {
+            array.push(num);
+            console.log(num);
+          }
+          }while(num!='*');
+          console.log(array);
+          
           
     </script>
 </body>

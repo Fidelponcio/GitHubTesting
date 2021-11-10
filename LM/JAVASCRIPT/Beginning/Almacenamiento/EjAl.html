@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EjAl.css">
     <title>EjAl</title>
     <script defer src="ejAl.js"></script>
 </head>
 <body>
     <form action="">
-        <fieldset>
-            <legend>INFORMACION PERSONAL</legend>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
-        </fieldset>
+        <div class="ip">
+                <p>INFORMACION PERSONAL</p>
+                
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                
+        </div>
+        <div class="ip">
+            <p>DIRECCION</p>
+            
+                <label for="cnp">Calle,nº,piso</label>
+                <input type="text" id="cnp">
+            
+                <label for="poblacion">Población</label>
+                <input type="text" id="poblacion">
+            
+                <label for="provincia">Provincia</label>
+                <input type="text" id="provincia">
+            
+        </div>
 
-        <fieldset>
-            <legend>DIRECCION</legend>
-            <label for="cnp">Calle,nº,piso</label>
-            <input type="text" id="cnp">
-            <label for="poblacion">Población</label>
-            <input type="text" id="poblacion">
-            <label for="provincia">Provincia</label>
-            <input type="text" id="provincia">
-        </fieldset>
-
-        <fieldset>
-            <legend>TELEFONOS</legend>
-            <label for="movil">Móvil</label>
-            <input type="text" id="movil">
-            <label for="casa">Casa</label>
-            <input type="text" id="casa">
-            <label for="trabajo">Trabajo</label>
-            <input type="text" id="trabajo">
-        </fieldset>
+        <div class="ip">
+            <p>TELEFONOS</p>
+                
+                <label for="movil">Móvil</label>
+                <input type="text" id="movil">                
+    
+                <label for="casa">Casa</label>
+                <input type="text" id="casa">
+            
+                <label for="trabajo">Trabajo</label>
+                <input type="text" id="trabajo">
+            
+        </div>
 
         <button id="btn1">Agregar</button>
         <input type="button" id="btn2" value="Buscar">
         <br>
-        <p id="buscado"></p>
+        <p class="ip" id="buscado"></p>
 
     </form>
 </body>
