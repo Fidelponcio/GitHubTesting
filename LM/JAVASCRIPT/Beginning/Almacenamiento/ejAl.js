@@ -34,7 +34,14 @@ document.getElementById("btn1").onclick=function(){
 document.getElementById("btn2").onclick=function(){
     let datoFound = JSON.parse(localStorage.getItem(agenda.nombre.value));
     let cadena= `<p>Nombre: ${agenda.nombre.value}</p>`;
+
     cadena+= `<p>Calle, nº, piso: ${datoFound.direccion.cnp}</p>`;
+    cadena+= `<p>Población: ${datoFound.direccion.poblacion}</p>`;
+    cadena+= `<p>Provincia: ${datoFound.direccion.provincia}</p>`;
+
+    cadena+= `<p>Móvil: ${datoFound.telefonosA[0]}</p>`;
+    cadena+= `<p>Casa: ${datoFound.telefonosA[1]}</p>`;
+    cadena+= `<p>Trabajo: ${datoFound.telefonosA[2]}</p>`;
     
     document.getElementById("buscado").innerHTML= cadena;
     
