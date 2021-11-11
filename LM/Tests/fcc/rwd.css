@@ -1,0 +1,52 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    background-size: cover;   
+}
+
+.main {
+    width: 98vw;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+img {
+    width: 55%;
+    height: auto;
+    padding: 25px;
+}
+
+figcaption {
+    padding-bottom: 25px;
+}
+
+.img {
+    margin: auto;
+    width: 95%;
+    background-color: #FFFFFF;
+}
+
+ul {
+   width:35%; 
+   text-align: left;
+   list-style: outside;
+   margin: 20px auto;
+}
+
+li {
+    padding: 10px;
+    font-weight: lighter;
+}
+
+footer {
+    padding: 25px;
+}
