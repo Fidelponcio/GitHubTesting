@@ -9,7 +9,7 @@
 <body>
     <script>
         /* La Sociedad Española para el Estudio de la Obesidad define el IMC (índice de masa corporal) de una persona mediante la fórmula:
-        IMC = Peso (kg) / altura (m) 2 
+        IMC = Peso (kg) / altura (m2)
         Ejemplo: 67 Kg y 1,80 m. de altura
         IMC=67/(1,80)2 = 20,68, Peso normal
 
@@ -26,9 +26,51 @@
         Introducir los datos de altura y peso mediante la función prompt. Validar que los datos sean numéricos.  
         Obtener el IMC  mediante una función a la que se le pasen el peso y la altura. Mostrará en la consola 
         del navegador el IMC y un texto indicando el grado de obesidad :   console.log(IMC).
- */
+        */
+        let peso, altura, imc, imcText;
+        peso= prompt("Dime tu peso (kg): ");
+        altura= prompt("Dime tu altura (m):");
+        imc= peso / Math.pow(altura, 2);
+        imc=Math.round(imc * 100)/100;
+        console.log(imc);
+        
+        if (isNaN(peso) || isNaN(altura)){
+            console.log("Datos introducidos no válidos");
+        } else {
 
+            switch(true){
+                case (imc<18.5):
+                    imcText="Peso insuficiente";
+                    break;
+                case (imc>=18.5 && imc<25):
+                    imcText="Normal";
+                    break;
+                case(imc>=25 && imc<27):
+                    imcText="Sobrepeso grado I";
+                    break;
+                case (imc>=27 && imc<30):
+                    imcText="Sobrepeso grado II";
+                    break;
+                case (imc>=30 && imc<35):
+                    imcText="Obesidad I";
+                    break;
+                case (imc>=35 && imc<40):
+                    imcText="Obesidad II";
+                    break;
+                case (imc>=40 && imc<50):
+                    imcText="Obesidad III (mórbida)";
+                    break;
+                case (imc>=50):
+                    imcText="Obesidad III (extrema)";
+                    break;
+                default:
+                    imcText="Valor no registrado";
+        }
+        
+        console.log(imc +" "+ imcText);
+
+        }
  
     </script>
 </body>
-</html>l
+</html>
