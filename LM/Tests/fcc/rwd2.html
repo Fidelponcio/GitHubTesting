@@ -10,21 +10,72 @@
 <body>
     <div class="main">
         <h1>freeCodeCamp Survey Form</h1>
-        <p><i>Thank you for taking the time to help us improve the platform</i></p>
+        <description><i>Thank you for taking the time to help us improve the platform</i></description>
         <div class="forms">
             <form action="">
-                <div class="info">
+                
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="info">
+                
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="info">
-                    <label for="age">Age(optional)</label>
-                    <input type="text" id="age">
-                </div>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                
+                    <label for="age">Age (optional)</label>
+                    <input type="number" id="age" placeholder="Age">
+
+                    <label for="role">Which option describes your current role?</label>
+                    <select name="role" id="role">
+                        <optgroup label="Select a current role">
+                            <!-- Idk if you can mark an optgroup as selected, did not seem to work. Did some research and found nothing about it. -->
+                            <option value="student">Student</option>
+                            <option value="ftj">Full Time Job</option>
+                            <option value="ftl">Full Time Learner</option>
+                            <option value="pnts">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="">Would you recommend freeCodeCamp to a friend?</label>
+                    <div class="radio">
+                        <!-- Input text is slightly moved down because of zoomed input icon -->
+                            <input type="radio" id="def" name="radio"> Definetely <br>
+                            <input type="radio" id="maybe" name="radio"> Maybe <br> 
+                            <input type="radio" id="ns" name="radio"> Not sure <br>
+                            
+                    </div>
+                
+                    <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                    <select name="feature" id="feature">
+                        <optgroup label="Select an option">
+                            <!-- Idk if you can mark an optgroup as selected, did not seem to work. Did some research and found nothing about it. -->
+                            <option value="cha">Challenges</option>
+                            <option value="pro">Projects</option>
+                            <option value="com">Community</option>
+                            <option value="os">Open Source</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="">What would you like to see improved? (Check all that apply)</label>
+                    <div class="radio">
+                        <!-- Input text is slightly moved down because of zoomed input icon -->
+                        <input type="checkbox" id="cb1" name="cb1" value="cb1"> Front-end Projects <br>
+                        <input type="checkbox" id="cb2" name="cb2" value="cb2"> Back-end Projects <br>
+                        <input type="checkbox" id="cb3" name="cb3" value="cb3"> Data Visualization <br>
+                        <input type="checkbox" id="cb4" name="cb4" value="cb4"> Challenges <br>
+                        <input type="checkbox" id="cb5" name="cb5" value="cb5"> Open Source Community <br>
+                        <input type="checkbox" id="cb6" name="cb6" value="cb6"> Gitter help rooms <br>
+                        <input type="checkbox" id="cb7" name="cb7" value="cb7"> Videos <br>
+                        <input type="checkbox" id="cb8" name="cb8" value="cb8"> City Meetups <br>
+                        <input type="checkbox" id="cb9" name="cb9" value="cb9"> Wiki <br>
+                        <input type="checkbox" id="cb10" name="cb10" value="cb10"> Forum <br>
+                        <input type="checkbox" id="cb11" name="cb11" value="cb11"> Additional Courses <br>
+                    </div>
+
+                    <label for="ta">Any comment or suggestion?</label>
+                    <textarea name="ta" id="ta" cols="30" rows="7" placeholder="Enter your comment here..."></textarea>
+                    
+                    <input type="submit" id="submit" value="Submit">
+
             </form>
         </div>
     </div>

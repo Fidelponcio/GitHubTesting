@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: #6D6EA8;
+    background-color: rgba(49, 53, 170, 1);
     color: white;
 }
 
@@ -17,24 +17,46 @@ body {
 
 .forms {
     width: 40%;
-    height: 400px;
     margin: 40px auto;
-    background-color: rgba(35, 38, 75, 0.5);
+    height: auto;
+    background-color: rgba(10, 11, 34, 0.5);
     padding: 25px;
     border-radius: 5px;
 }
 
-.info {
-
-}
-
-.info label, .info input {
-    display: block;
-    width: 80%;
-}
-
-input {
-    height: 25px;
+.forms label, .forms input:not(.radio input), .forms select {
+    display:flex;
+    align-items: center;
+    margin: 15px;
+    text-align: left;
+    width: 90%;
+    height: 30px;
     border-radius: 5px;
 }
+
+.radio {
+    text-align: left;
+}
+.radio input {
+    margin: 10px;   
+    zoom: 1.5;
+}
+
+textarea {
+    width: 90%;
+    height: auto;
+    resize: none;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: rgb(19, 168, 56);
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
 
