@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ej7</title>
 </head>
 <body>
     <script>
@@ -16,17 +16,25 @@
 
         let num= prompt("Introduce un número y comprobamos si es primo o no: ");
 
-        if (num < 2){
-            console.log("El número " +num+ " no es primo");
-        }
-
-        for (let index = 2; index < num; index++) {
-            if(num % i === 0){
+        function isPrime(num){
+            
+            if (num < 2){
                 console.log("El número " +num+ " no es primo");
             }
-            
-            console.log("El número " +num+ " es primo");
+    
+            for (let index = 2; index < num; index++) {
+                if(num % index === 0){
+                    return console.log("El número " +num+ " no es primo");
+                }
+                
+                //let divNums=[];
+                //divNums.push(index);
+    
+            }
+            return console.log("El número " +num+ " es primo");
         }
+
+        isPrime(num);
 
     </script>
 </body>
