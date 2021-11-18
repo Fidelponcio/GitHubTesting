@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_YRC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-color: rgba(49, 53, 170, 1);
+            color: white;
+        }
+        
+        .main {
+            width: 100vw;
+            height: auto;
+            margin: 20px auto;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .forms {
+            width: 40%;
+            margin: 40px auto;
+            height: auto;
+            background-color: rgba(10, 11, 34, 0.5);
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .forms label, .forms input:not(.radio input), .forms select {
+            display:flex;
+            align-items: center;
+            margin: 15px;
+            text-align: left;
+            width: 90%;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .radio {
+            text-align: left;
+        }
+        .radio input {
+            margin: 10px;   
+            zoom: 1.5;
+            vertical-align: middle;
+        }
+
+        textarea {
+            width: 90%;
+            height: auto;
+            resize: none;
+        }
+
+        #submit {
+            display: block;
+            margin: auto;
+            color: white;
+            background-color: rgb(19, 168, 56);
+            height: 50px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="forms">
+            <form action="">
+                <fieldset>
+                    <div>
+                    <label class="etiqueta" for="nombre">Nombre: </label>
+                    <input id="nombre" type="text" name="nombre">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="ape">Apellidos: </label>
+                        <input id="ape" type="text" name="ape">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="dom">Domicilio: </label>
+                        <input id="dom" type="text" name="dom">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="mun">Municipio: </label>
+                        <input id="mun" type="text" name="mun">
+                    </div>
+
+                    <div>
+                        <label for="prov">Provincia de nacimiento:</label>
+                        <select id="prov">
+                            <option value="">Seleccione la provincia</option>
+                            <option value="León">León</option>
+                            <option value="Palencia">Palencia</option>
+                            <option value="Burgos">Burgos</option>
+                            <option value="Soria">Soria</option>
+                            <option value="Segovia">Segovia</option>
+                            <option value="Ávila">Ávila</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Zamora">Zamora</option>
+                            <option value="valladolid">Valladolid</option>
+                        </select>
+                    </div>
+
+                    <p>Nivel de estudios: </p>
+
+                    <div class="radio">
+                        <input type="radio" id="radio1" name="radio1" value="radio1"> Enseñanza obligatoria / sin estudios <br>
+                        <input type="radio" id="radio2" name="radio2" value="radio2"> Bachillerato / CC.FF. de grado medio de FP <br>
+                        <input type="radio" id="radio3" name="radio3" value="radio3"> Estudios universitarios de primer ciclo / CC.FF. de grado superior de FP <br>
+                        <input type="radio" id="radio4" name="radio4" value="radio4"> Grado / Licenciatura universitaria <br>
+                        <input type="radio" id="radio5" name="radio5" value="radio5"> Doctorado <br>
+                    </div>
+                    
+
+                    <div>
+                    <input id="est2" type="radio" value="BACH" name="estudios">
+                    <label for="est2">Bachillerato / CC.FF. de grado medio de FP </label>
+                    </div>  
+
+                    <div>
+                    <input id="est3" type="radio" value="FPGS" name="estudios">
+                    <label for="est3">Estudios universitarios de primer ciclo / CC.FF. de grado superior de FP </label>
+                    </div>  
+
+                    <div>
+                    <input id="est4" type="radio" value="Grado" name="estudios">
+                    <label for="est4">Grado / Licenciatura universitaria </label>
+                    </div> 
+                    
+                    <div>
+                    <input id="est5" type="radio" value="Master" name="estudios">
+                    <label for="est5">Estudios de postgrado / máster </label>
+                    </div>  
+                    
+                    <div>
+                        <input type="radio" value="Doctorado" name="estudios">
+                        <label>Doctorado </label>
+                    </div>
+                            
+                    <p>Indicar aficiones: </p>
+                    <div>
+                        <input id="deporte" type="checkbox" name="deporte">
+                        <label for="deporte">Deporte </label>
+                    </div>
+                    <div>
+                        <input id="comida" type="checkbox" name="comida">
+                        <label for="comida">Comida </label>
+                    </div>
+
+                    <div>
+                        <input id="peliculas" type="checkbox" name="peliculas">
+                        <label for="peliculas">Películas </label>
+                    </div>
+
+                    <div>
+                        <input id="dormir" type="checkbox" name="dormir">
+                        <label for="dormir">Dormir </label>
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="color">Indicar color favorito: </label>
+                        <input id="color" type="color" name="color">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="fNac">Fecha de nacimiento: </label>
+                        <input id="fNac" type="date" name="fNac">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="tel">Teléfono: </label>
+                        <input id="tel" type="tel" name="tel">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="pw">Página web: </label>
+                        <input id="pw" type="url" name="pw">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="email">Email: </label>
+                        <input id="email" type="email" name="email">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="cv">Subir CV: </label>
+                        <input id="cv" type="file" name="cv">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="edad">Edad: </label>
+                        <input id="edad" type="number" name="edad">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="altura">Indicar altura: </label>
+                        <input id="altura" type="range" name="altura" min="1" max="250" low="150" high="190">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="altura">Indicar peso: </label>
+                        <input id="altura" type="range" name="altura" min="20" max="400">
+                    </div>
+
+                    <div>
+                        <label class="etiqueta" for="ta">Indicar hábitos alimenticios: </label>
+                        <textarea name="ta" id="ta" cols="25" rows="5"></textarea>
+                    </div>
+
+                    <input type="submit" id="submit" placeholder="Enviar">
+                    <input type="reset" id="submit" value="Resetear datos">
+                </fieldset>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
