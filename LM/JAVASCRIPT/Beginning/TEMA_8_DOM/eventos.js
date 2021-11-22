@@ -45,6 +45,7 @@ function moverDiv(evento){
 
 function dejarDMover(){
     document.removeEventListener("mousemove", moverD);
+    ayudita.style.visibility="hidden";
 }
 
 function delDiv(){
