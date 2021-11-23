@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<style>
+    body{margin:50px;}
+    #padre {
+        display: flex;
+        border: 1px solid black;
+        width:fit-content;
+        padding: 10px;
+    }
+    #futbol, #basket, #tenis, #rugby {
+        padding: 10px;
+        border: 1px solid black;
+        height: 500px;
+    }
+    h2{
+        border: 1px solid black;
+    }
+    img {
+        position: absolute;
+    }
+    .col {
+        width: 100px;
+    }
+</style>
+<body>
+    <div id="padre">
+        <div id="futbol" class="col">
+            <h2 id="tituloFutbol">FUTBOL</h2>
+            <img id="imgFutbol" src="img/pelota.png" alt="pelota futbol" width="100" height="80">
+        </div>
+        <div id="basket" class="col">
+            <h2 id="tituloBasket">BASKET</h2>
+            <img id="imgBasket" src="img/basket.png" alt="pelota basket" width="85" height="80">
+        </div>
+        <div id="tenis" class="col">
+            <h2 id="tituloTenis">TENIS</h2>
+            <img id="imgTenis" src="img/tenis.png" alt="pelota tenis" width="85" height="80">
+        </div>
+        <div id="rugby" class="col">
+            <h2 id="tituloRugby">RUGBY</h2>
+            <img id="imgRugby" src="img/rugby.png" alt="pelota rugby" width="100" height="70">
+        </div>
+    </div>
+
+    <script src="ejercicio3.js"></script>
+   <!--  <script src="prueba.js"></script> -->
+</body>
+</html>

@@ -29,7 +29,7 @@ function moverCoor(evento){
 }
 
 function showKey(evento){
-    div2.innerHTML= evento.key;
+    div2.innerHTML= evento.key + " " + evento.keyCode;
 }
 
 //boton primario amarillo boton secundario azul
