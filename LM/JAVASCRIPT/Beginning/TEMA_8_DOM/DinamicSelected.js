@@ -1,3 +1,6 @@
+//1er ejercicio - select de comunidades y select de provincias dinámico
+//3er ejercicio - Barra de progreso con setInterval
+
 let comunidades = [
     {id:1, name:"Islas Canarias"},
     {id:2, name:"Castilla y León"},
@@ -30,7 +33,6 @@ let provincias = [
     {id: 22, name:"Alicante", idComunidad: 4},
 ]
 
-
 let ccaaSelect = document.getElementById("ccaa");
 let provSelect = document.getElementById("prov");
 
@@ -55,3 +57,8 @@ function cargarProv(){
         provSelect.add(option);
     })
 }
+
+// --------------------------------------------------
+//2º ejercicio - Visor de colores, tres controles RGB
+
+let rgb= [document.querySelectorAll("input[type=range]")]

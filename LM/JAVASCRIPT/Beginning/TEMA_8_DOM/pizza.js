@@ -33,6 +33,4 @@ ok.addEventListener("click", function(){
 
 })
 
-//1er ejercicio - select de comunidades y select de provincias dinámico
-//2º ejercicio - Visor de colores, tres controles RGB
-//3er ejercicio - Barra de progreso con setInterval
+

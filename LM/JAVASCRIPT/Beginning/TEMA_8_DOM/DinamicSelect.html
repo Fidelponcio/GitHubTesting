@@ -7,19 +7,31 @@
     <title>DinamicSelect</title>
 </head>
 <body>
-    <div>
-        <label for="ccaa">Comunidad autónoma: </label>
-        <select name="ccaa" id="ccaa">
-            <option value="0">Seleccione</option>
-        </select>   
-    </div>
+    <fieldset>
+        <div>
+            <label for="ccaa">Comunidad autónoma: </label>
+            <select name="ccaa" id="ccaa">
+                <option value="0">Seleccione</option>
+            </select>   
+        </div>
 
-    <div>
-        <label for="prov">Provincia: </label>
-        <select name="prov" id="prov">
-            <option value="0">Seleccione</option>
-        </select>
-    </div>
+        <div>
+            <label for="prov">Provincia: </label>
+            <select name="prov" id="prov">
+                <option value="0">Seleccione</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div>
+            <input type="range" id="red" name="red" min="0" max="255" value="0">
+            <input type="range" id="green" name="green" min="0" max="255" value="0">
+            <input type="range" id="blue" name="blue" min="0" max="255" value="0">
+        </div>
+        <input type="color" id="color" name="color" value="#ffffff" style="width:200px; height: 100px;">
+    </fieldset>
+
     <script src="DinamicSelected.js"></script>
 </body>
 </html>
