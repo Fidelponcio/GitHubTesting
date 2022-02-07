@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+        }
+
+        .item {
+            text-align: left;
+            border: 2px dotted black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .title, .footer {
+            text-align: center;
+        }
+
+        .title {
+            grid-area: 1 / 1 / 3 / 5;
+            background-color: darkgray;
+        }
+
+        .pnl_izq {
+            grid-area: 3 / 1 / 7 / 2;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .conPri {
+            grid-area: 3 /  / 6 /;
+            background-color: antiquewhite;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item title">
+            <h1>Título</h1>
+        </div>
+        <div class="item pnl_izq">
+            <h1>Panel izquierdo</h1>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias maiores fugit illum iusto eos, voluptatibus consequuntur qui illo, ipsum, tempore quod quae eius iure temporibus! Ex pariatur labore repellat distinctio!</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos dicta adipisci, sed esse, ducimus magnam illum id accusamus recusandae suscipit, odit dolores laudantium dolor non doloribus ut animi rerum!</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor molestias et ab omnis praesentium, voluptate, eius quo, illo maiores assumenda sequi? Facilis reiciendis ducimus magni maiores ratione, omnis sint dolorum.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consectetur nisi illo dicta neque laboriosam, officiis animi amet necessitatibus doloremque omnis officia odit a dolore. Facilis, dolor. Modi, iure minus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum officiis pariatur nostrum commodi, aperiam voluptatem! Ea doloremque nemo praesentium rerum unde, maiores obcaecati sint quas sequi accusantium nisi fuga!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam, quam temporibus placeat sunt cum quo vel deleniti alias, id nostrum delectus commodi esse perspiciatis autem odio exercitationem rerum quasi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis obcaecati perferendis tempora nulla nobis saepe impedit modi? Dolores ab facilis tenetur consectetur blanditiis delectus porro mollitia maiores explicabo architecto.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa deleniti qui quibusdam dolores assumenda. Nisi numquam odio quisquam labore minima, facere recusandae ab, omnis alias nobis voluptate? Suscipit, recusandae quam.</li>
+            </ul>
+        </div>
+        <div class="item pnl_der">
+            <h1>Panel derecho</h1>
+            <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias maiores fugit illum iusto eos, voluptatibus consequuntur qui illo, ipsum, tempore quod quae eius iure temporibus! Ex pariatur labore repellat distinctio!</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos dicta adipisci, sed esse, ducimus magnam illum id accusamus recusandae suscipit, odit dolores laudantium dolor non doloribus ut animi rerum!</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor molestias et ab omnis praesentium, voluptate, eius quo, illo maiores assumenda sequi? Facilis reiciendis ducimus magni maiores ratione, omnis sint dolorum.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consectetur nisi illo dicta neque laboriosam, officiis animi amet necessitatibus doloremque omnis officia odit a dolore. Facilis, dolor. Modi, iure minus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum officiis pariatur nostrum commodi, aperiam voluptatem! Ea doloremque nemo praesentium rerum unde, maiores obcaecati sint quas sequi accusantium nisi fuga!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam, quam temporibus placeat sunt cum quo vel deleniti alias, id nostrum delectus commodi esse perspiciatis autem odio exercitationem rerum quasi.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis obcaecati perferendis tempora nulla nobis saepe impedit modi? Dolores ab facilis tenetur consectetur blanditiis delectus porro mollitia maiores explicabo architecto.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa deleniti qui quibusdam dolores assumenda. Nisi numquam odio quisquam labore minima, facere recusandae ab, omnis alias nobis voluptate? Suscipit, recusandae quam.</li>
+            </ul>
+        </div>
+        <div class="item conPri">
+            <h1>Contenido principal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, exercitationem. Necessitatibus, aliquid animi? Excepturi iure voluptatem maiores aliquam cum optio voluptas! Soluta repellendus quia quidem quis perferendis ut aspernatur quisquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur dolore quidem incidunt dolorem, inventore possimus aliquid commodi eum atque, ipsa quae nobis rem. Molestiae nihil ipsam ad facilis qui.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga fugit, velit suscipit expedita sed qui illo dignissimos nam laboriosam at in nobis odio magnam minima deserunt corrupti reprehenderit repudiandae?</p>
+        </div>
+        <div class="item footer">
+            <h1>Pie de página</h1>
+        </div>
+    </div>
+</body>
+</html>
