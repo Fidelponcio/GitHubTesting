@@ -10,8 +10,105 @@
 </head>
 <body>
     <header>
-        <p>Shopping cart</p>
+        <p>SHOPPING CART</p>
     </header>
 
+    <!-- 
+    1 Descripcion, foto, precio actual actualizable y boton para añadir al carro 
+    2. Mostrar el listado de productos añadidos con la cantidad solicitada 
+    (sin repetir producto).
+    3. Botón para anular un producto del carrito.
+    4. Botón para vaciar el carrito.
+    5. Mostrar el precio total del carrito.
+    6. Tiene que recordar los productos introducidos en el carrito al salir de 
+    la página o refrescar gracias a LocalStorage.
+    
+    -->
+
+    <div class="container">
+        <div class="product">
+            <div class="desc">
+                <p>Newskill Icarus RGB IC27QRC 27" LED QuadHD 165Hz G-Sync Compatible</p>
+            </div>
+            <img src="./img/2569-newskill-icarus-rgb-27-led-quadhd-165hz-g-sync-compatible-foto.webp" alt="monitor">
+            <input type="number" name="" id="" class="price" placeholder="269.99€">
+            <input type="button" value="Añadir" class="but">
+        </div>
+
+        <div class="product">
+            <div class="desc">
+                <p>Newskill Kitsune Zephyr Series Silla Gaming acabada en Tela Gris/Negro</p>
+            </div>
+            <img src="./img/3250-newskill-kitsune-zephyr-series-silla-gaming-acabada-en-tela-gris-negro-mejor-precio.webp" alt="chair">
+            <input type="number" name="" id="" class="price" placeholder="168.99€">
+            <input type="button" value="Añadir" class="but">
+        </div>
+
+        <div class="product">
+            <div class="desc">
+                <p>Newskill Mercury Mochila Gaming para Portátil hasta 15.6”</p>
+            </div>
+            <img src="./img/2340-newskill-mercury-mochila-gaming-para-portatil-hasta-156-comprar.webp" alt="laptopBag">
+            <input type="number" name="" id="" class="price" placeholder="44.99€">
+            <input type="button" value="Añadir" class="but">
+        </div>
+
+        <div class="product">
+            <div class="desc">
+                <p>Newskill Serike TKL Ivory Red Teclado Mecánico Gaming Full RGB Switch Red</p>
+            </div>
+            <img src="./img/4233-newskill-serike-tkl-ivory-red-teclado-mecanico-gaming-full-rgb-switch-red-especificaciones.webp" alt="keyboard">
+            <input type="number" name="" id="" class="price" placeholder="42.96€">
+            <input type="button" value="Añadir" class="but">
+        </div>
+
+        <div class="product">
+            <div class="desc">
+                <p>Newskill Serike TKL Ivory Red Teclado Mecánico Gaming Full RGB Switch Red</p>
+            </div>
+            <img src="./img/121-newskill-seth-auriculares-gaming-inalambricos-rgb.webp" alt="headphones">
+            <input type="number" name="" id="" class="price" placeholder="69.95€">
+            <input type="button" value="Añadir" class="but">
+        </div>
+
+        <div class="product">
+            <div class="desc">
+                <p>Newskill Atmosphere Lámpara de Pie Regulable con Luz Ambiental RGB</p>
+            </div>
+            <img src="./img/1945-newskill-atmosphere-lampara-de-pie-regulable-con-luz-ambiental-rgb.webp" alt="headphones">
+            <input type="number" name="" id="" class="price" placeholder="67.38€">
+            <input type="button" value="Añadir" class="but">
+        </div>
+    </div>
+
+    <!-- 
+    2. Mostrar el listado de productos añadidos con la cantidad solicitada 
+    (sin repetir producto).
+    3. Botón para anular un producto del carrito.
+    4. Botón para vaciar el carrito.
+    5. Mostrar el precio total del carrito.
+    6. Tiene que recordar los productos introducidos en el carrito al salir de 
+    la página o refrescar gracias a LocalStorage.
+    -->
+
+    <div class="carrito">
+        <p>Listado de productos</p>
+        <div class="listado">
+            <!--
+                <input type="button" value="X">
+                Este botón ha de ir al principio de cada producto para
+                poder eliminarlo si así lo deseamos
+            --> 
+                
+        </div>
+        <input type="button" value="Vaciar carrito">
+        <p class="total">100€</p>
+
+    </div>
+
+
+    <footer>
+        AmazingProducts S.A.
+    </footer>
 </body>
 </html>
