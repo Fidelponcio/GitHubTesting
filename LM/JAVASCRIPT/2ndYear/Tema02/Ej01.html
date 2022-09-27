@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej01</title>
+</head>
+<body>
+    <script>
+        /*
+        1. Crear un array de números de forma interactiva mediante la función prompt. Asegurarse de que los
+        elementos del array son números.
+        */
+        //Number() para convertir el argumento a número o NaN
+        //isNaN() devuelve true si el argumento no es un número
+
+        let numArr = [];
+        for (let index = 0; index < 10; index++) {                      
+            let num;
+            do {
+                num = Number(prompt("Introduce un número:"));
+                
+            } while (isNaN(num));
+            numArr[index] = num;
+        }
+
+    console.log(numArr);        
+
+    </script>
+</body>
+</html>
