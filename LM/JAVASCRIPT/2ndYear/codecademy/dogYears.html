@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Initializing variable myAge
+        var myAge = 22;
+        //Initializing variable earlyYears
+        var earlyYears = 2;
+        //Calculate total early age for dogs
+        // earlyYears *= 10.5;
+        earlyYears = earlyYears * 10.5;
+        //Extract two years from myAge since we already calculated first two dog total years
+        var laterYears = myAge - 2;
+        //Calculated the rest of the dog years
+        // laterYears *= 4;
+        laterYears = laterYears * 4;
+        // console.log(earlyYears +" "+ laterYears);
+
+        //Sum of total dog years
+        var myAgeInDogYears = earlyYears + laterYears;
+        //Initializing variable myName
+        myName = 'Fidelponcio'.toLowerCase();
+        //Printing the sentence
+        console.log('My name is ' +myName+ '. I am ' +myAge+ ' years old in human years which is ' +myAgeInDogYears+ ' years old in dog years.');
+    </script>
+</body>
+</html>

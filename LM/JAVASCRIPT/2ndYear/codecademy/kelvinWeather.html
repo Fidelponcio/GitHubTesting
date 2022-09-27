@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declaring Kelvin degrees
+        const Kelvin = 293;
+        // Calculating celsius based of Kelvin
+        const celsius = Kelvin - 273;
+        //Calculating Fahrenheit based of celsius and floor the result so we don´t get decimals
+        const fahrenheit = Math.floor(celsius *(9/5) + 32);
+        //Calculating Newton based of celsius and floor the result so we don´t get decimals
+        const newton = Math.floor(celsius * (33/100));
+
+        console.log('The temperature is ' +fahrenheit+ ' degrees Fahrenheit.');
+        console.log(`The temperature is ${newton} degrees Newton.`);
+
+    </script>
+</body>
+</html>
