@@ -15,7 +15,29 @@
         Extrepequeña=XS. Introduce mediante un prompt una talla europea y muestra en consola la talla de
         prenda.
         */
-
+        let talla = prompt("Introduce la talla:");
+        switch(talla.toUpperCase()){
+            case 'XXXL':
+            case 'XXL':
+            case 'XL':
+                console.log("Extragrande");
+                break;
+            case 'L':
+                console.log("Grande");
+                break;
+            case 'M':
+                console.log("Mediana");
+                break;
+            case 'S':
+                console.log("Pequeña");
+                break;
+            case 'XS':
+                console.log("Extrapequeña");
+                break;
+            default:
+                console.log("No existe esta talla");
+                break;
+        }
         
     </script>
 </body>
