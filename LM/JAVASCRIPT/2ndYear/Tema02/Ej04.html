@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej04</title>
+</head>
+<body>
+    <script>
+        /*
+        Crear una matriz de números y mostrar por la consola o por el documento las coordenadas de las
+        posiciones que tengan un número impar. Recorre el array usando las estructuras while y for y
+        comprueba cual tiene mejor rendimiento usando la consola como en el caso anterior.
+        */
+
+        let numArr = [
+            [1, 2, 3, 4, 5],
+            [6, 7, 8, 9, 10]
+        ];
+
+        for (let x = 0; x < numArr.length; x++) {
+            for (let y = 0; y < numArr[x].length; y++) {
+                if (numArr[x][y]%2){
+                console.log('['+ x +','+ y +'] '+ numArr[x][y]);
+                }
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

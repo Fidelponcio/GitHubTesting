@@ -13,8 +13,23 @@
         menor.
         */
         let numArr = [10, 15, 20, 50, 5, 150, 7.5, 1, -5, 0];
-        numArr.sort(function(a, b){return a-b});
-        console.log(numArr);
+        let min= 0, max= 0;
+        for (let i = 0; i < numArr.length; i++) {
+            if (numArr[i]< min){
+                min = numArr[i];
+            }
+            if (numArr[i]> max){
+                max = numArr[i];
+            }
+            
+        }
+        console.log('min: '+min+' max: '+max);
+        
+        
+        //Sorted from greatest to lowest
+        /*numArr.sort(function(a, b){return b-a});
+        console.log(numArr[0] +' '+ numArr[9]);*/
+
     </script>
 </body>
 </html>
