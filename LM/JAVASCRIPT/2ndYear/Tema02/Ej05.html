@@ -26,16 +26,19 @@
         */ 
 
         var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-        let NIF = prompt('Introduce tu número de DNI (sin la letra):');
-
+        let NIF;
         
-        
+        do {
+            NIF = prompt('Introduce tu número de DNI (sin la letra):');
+            
         if (NIF < 0 || NIF > 99999999 || isNaN(NIF)){
             console.log('Número introducido incorrecto!');
         } else {
             let calc = NIF % 23;
             console.log(NIF+ letras[calc]);
         }
+
+    } while(NIF < 0 || NIF > 99999999 || isNaN(NIF));
 
     </script>
 </body>

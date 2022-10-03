@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej08</title>
+</head>
+<body>
+    <script>
+        /*
+        Adapta el ejercicio anterior para que el mensaje “n es primo” se trate como una excepción, utilizando
+        try/catch
+        */
+       let numero, primo = true, divisores = [];
+       do {
+        numero = Number(prompt('Introduce un número > 0 y verifica si es primo: '));
+       }while(isNaN(numero) || numero < 1);
+
+       try {
+        for (let divisor = 0; divisor < array.length; divisor++) {
+            if (numero % divisor === 0){
+                primo = false;
+                divisores.push(divisor);
+            }
+        }
+        if (primo){
+            throw (`${numero} es primo`);
+        }else {
+            console.log(`los divisores son ${divisores}`);
+        }
+       } catch (error){
+        console.log('Error');
+       }
+
+    </script>
+</body>
+</html>
