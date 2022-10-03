@@ -20,7 +20,7 @@ if (!empty($_POST)){
 <!-- A partir de aquí tengo el formulario -->
 
     <h1>Formulario de recogida de datos del alumno</h1>
-    <form action='$_SERVER["PHP_SELF"]' method="post" >
+    <form action='<?php htmlspecialchars($_SERVER["PHP_SELF"])?>' method="post" >
         Nombre y Apellidos:
         <input type="text" name="nombreApellidos" value=""><br>
         Curso:
