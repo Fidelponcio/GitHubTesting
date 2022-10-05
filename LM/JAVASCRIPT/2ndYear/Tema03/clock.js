@@ -24,4 +24,11 @@ let intervalo = setInterval(function(){
         hs++;
         hours.innerText = hs;
     }
-},1000);
+
+    if (hs === 24){
+        hs = 0;
+        hs.innerText = hs;
+
+    }
+
+},100);
