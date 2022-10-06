@@ -9,7 +9,13 @@ let intervalo = setInterval(function(){
 
     secs++;
     seconds.innerText = secs;
-
+    
+    if (secs.length == 1){
+        secs = '0' + secs;
+        
+    }
+    console.log(secs.length);
+    
     if (secs === 60){
         secs = 0;
         seconds.innerText = secs;
@@ -17,6 +23,7 @@ let intervalo = setInterval(function(){
         minutes.innerText = mins;
 
     }
+    
 
     if (mins === 60){
         mins = 0;
@@ -31,4 +38,4 @@ let intervalo = setInterval(function(){
 
     }
 
-},100);
+},250);
