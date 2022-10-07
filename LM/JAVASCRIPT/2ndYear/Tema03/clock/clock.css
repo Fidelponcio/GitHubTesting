@@ -8,8 +8,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
-    background-color: rgba(49, 53, 170, 1);
-    color: black;
+    background-color: #06283D;
+    color: #DFF6FF;
     font-family: digital;
 }
 
@@ -22,12 +22,14 @@
 }
 
 .clock div, span{
+    width: 7.5vw;
     padding: 1%;
     font-weight: bolder;
     font-size: 5vw;
+    text-align: center;
 }
 
 .clock div {
-    background-color: darkcyan;
+    background-color: #1363DF;
     border-radius: 10px;
 }

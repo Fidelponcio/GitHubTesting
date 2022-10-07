@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1.-Basándonos en el ejercicio 1 del tema anterior; crea un función que acepte un parámetro y devuelva un
+        array de números. El parámetro es el número de elementos del array. La función debe asegurarse que los
+        elementos del array sean todos números. La función no se interrumpirá por ningún error. Si al introducir un
+        dato, éste no es un número nos deberá volver a pedir el dato hasta que sea un número.
+        */
+        let boton = document.getElementById("btn1");
+        let input = document.getElementById("txt1");
+        let visor = document.getElementById("visor");
+
+        boton.addEventListener("click", getArray);
+        
+        function getArray(arrNum){
+            let arr = []; let num;
+            for (let index = 0; index < arrNum; index++) {
+                do {
+                    num = Number(prompt("Introduce un número:"));
+                } while (isNaN(num));
+                arr.push(num);
+            }
+            return arr;
+            
+        }
+        
+        boton.onclick=function(){
+            visor.innerText = (Number(input.value)).toString();
+        }
+
+    </script>
+    <form action="">
+        <input type="text" id="txt1">
+        <input type="button" id="btn1" value="Número de elementos del array">
+    </form>
+    <p id="msg"></p>
+    <p id="visor"></p>
+</body>
+</html>
