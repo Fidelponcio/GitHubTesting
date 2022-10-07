@@ -3,10 +3,10 @@ let minutes = document.querySelector(".min");
 let hours = document.querySelector(".hour");
 
 let intervalo = setInterval(function(){
-    let secs = Number(seconds.innerText);
+    /*let secs = Number(seconds.innerText);
     let mins = Number(minutes.innerText);
     let hs = Number(hours.innerText);
-
+        
     secs++;
     seconds.innerText = secs;
     
@@ -36,6 +36,28 @@ let intervalo = setInterval(function(){
         hs = 0;
         hs.innerText = hs;
 
+    }*/
+
+    let date = new Date();
+    var currSec = date.getSeconds();
+    var currMins = date.getMinutes();
+    var currHs = date.getHours();
+
+    currSec = checkTime(currSec);
+    currMins = checkTime(currMins);
+    currHs = checkTime(currHs);
+
+    
+    
+    seconds.innerText = currSec;
+    minutes.innerText = currMins;
+    hours.innerText = currHs;
+    
+    function checkTime(i){
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
     }
 
-},250);
+},1000);
