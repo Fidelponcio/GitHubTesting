@@ -5,7 +5,7 @@ let hours = document.querySelector(".hour");
 let intervalo = setInterval(function(){
     //Cronómetro
 
-    let secs = Number(seconds.innerText);
+    /*let secs = Number(seconds.innerText);
     let mins = Number(minutes.innerText);
     let hs = Number(hours.innerText);
     
@@ -41,12 +41,12 @@ let intervalo = setInterval(function(){
             i = "0" + i;
         }
         return i;
-    }
+    }*/
 
 
     //Reloj
 
-    /*let date = new Date();
+    let date = new Date();
     var currSec = date.getSeconds();
     var currMins = date.getMinutes();
     var currHs = date.getHours();
@@ -64,6 +64,6 @@ let intervalo = setInterval(function(){
             i = "0" + i;
         }
         return i;
-    }*/
+    }
 
 },1000);

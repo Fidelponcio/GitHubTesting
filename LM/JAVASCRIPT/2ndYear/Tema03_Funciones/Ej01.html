@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="">
+        <input type="number" id="num1">
+        <input type="button" id="btn1" value="Número de elementos del array">
+    </form>
+    <p id="visor"></p>
     <script>
         /*
         1.-Basándonos en el ejercicio 1 del tema anterior; crea un función que acepte un parámetro y devuelva un
@@ -15,33 +20,33 @@
         dato, éste no es un número nos deberá volver a pedir el dato hasta que sea un número.
         */
         let boton = document.getElementById("btn1");
-        let input = document.getElementById("txt1");
+        let input = document.getElementById("num1");
         let visor = document.getElementById("visor");
-
-        boton.addEventListener("click", getArray);
         
-        function getArray(arrNum){
-            let arr = []; let num;
-            for (let index = 0; index < arrNum; index++) {
-                do {
-                    num = Number(prompt("Introduce un número:"));
-                } while (isNaN(num));
-                arr.push(num);
-            }
-            return arr;
+        
+        boton.addEventListener("click", function(){
             
-        }
+            console.log(input.value);
+            let arrLength = input.value;
+            let arr = [];
+            for (let index = 0; index < arrLength; index++) {
+                arr.push(Math.floor(Math.random()* 10 + 1));
+                visor.innerText = arr;
+            }
+            
+
+        });
         
-        boton.onclick=function(){
-            visor.innerText = (Number(input.value)).toString();
-        }
+        
+        /*function getArray(input){
+            let arr = [];
+            for (let index = 0; index < arrLength; index++) {
+                arr.push(Math.floor(Math.random()* 10 + 1));
+            }
+            visor.innerText = arr;
+            
+        }*/
 
     </script>
-    <form action="">
-        <input type="text" id="txt1">
-        <input type="button" id="btn1" value="Número de elementos del array">
-    </form>
-    <p id="msg"></p>
-    <p id="visor"></p>
 </body>
 </html>
