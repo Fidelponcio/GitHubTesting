@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej03</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="text1">
+        <input type="button" id="btn1" value="Talla de prenda">
+        </form>
+        <p id="visor"></p>
+    <script>
+        /*
+        3.- Adapta el ejercicio 3 del tema anterior, creando una función que acepte como parámetro una talla europea
+        (S,L,..) y devuelva la talla de prenda. 
+        */
+
+        let boton = document.getElementById("btn1");
+        let talla = document.getElementById("num1");
+        let visor = document.getElementById("visor");
+
+        boton.addEventListener("click", getTalla);
+
+        function getTalla(e){
+            switch(e.toUpperCase()){
+                case 'XXXL':
+                case 'XXL':
+                case 'XL':
+                    visor.innerText = "Extragrande";
+                    break;
+                case 'L':
+                    visor.innerText = "Grande";
+                    break;
+                case 'M':
+                    visor.innerText = "Mediana";
+                    break;
+                case 'S':
+                    visor.innerText = "Pequeña";
+                    break;
+                case 'XS':
+                    visor.innerText = "Extrapequeña";
+                    break;
+                default:
+                    visor.innerText = "No existe esta talla o dato incorrecto";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
