@@ -21,19 +21,28 @@
         elementos del array sean todos números. La función no se interrumpirá por ningún error. Si al introducir un
         dato, éste no es un número nos deberá volver a pedir el dato hasta que sea un número.
         */
-        let input = document.getElementById("num1");
-        let boton = document.getElementById("btn1");
-        let input2 = document.getElementById("num2");
-        let boton2 = document.getElementById("btn2");
-        let visor = document.getElementById("visor");
-        
-        boton.addEventListener("click", function(){
-            arrayLength(input.value);
+       let boton = document.getElementById("btn1");
+       let boton2 = document.getElementById("btn2");
+       let visor = document.getElementById("visor");
+       
+       let arrNum, index = 0;
+       
+       boton.addEventListener("click", function(){
+           let input = document.getElementById("num1").value;
+           arrNum = new Array(Number(input));
+           
+           
+           // console.log(arrNum);
         });
-        boton2.addEventListener("click", function(){
-            addNumber(input2.value);
-        })
         
+        boton2.addEventListener("click", function(){
+            let input2 = document.getElementById("num2").value;
+            arrNum[index] = input2;
+            index++;
+            console.log(arrNum);
+            //if index > array
+        })
+
         /*function arrayLength(length){
             let arrNum = [];
             for (let index = 0; index < length; index++) {
@@ -42,17 +51,6 @@
             }
             return arrNum;
         }*/
-
-        function arrayLength(length){
-            let arrNum = new Array(length);
-            return arrNum;
-        }
-        
-        function addNumber(num){
-            for (let index = 0; index < arrNum.length; index++) {
-                arrNum[index] = num;
-            }
-        }
         
     </script>
 </body>
