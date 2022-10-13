@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej02</title>
+</head>
+<body>
+    <script>
+        /*
+        Diseña una jerarquía de objetos basada en tres clases:
+        
+        Libro y Comic heredarán las propiedades de Publicacion. Comprobar que una instancia de Libro hereda las
+        propiedades de Publicación y que una instancia de Comic lo mismo.
+        */
+
+        class Publicacion {
+            constructor(nPag, editorial, titulo, precio){
+                this.nPag = nPag;
+                this.editorial = editorial;
+                this.titulo = titulo;
+                this.precio = precio;
+            }
+        }
+
+        class Libro extends Publicacion{
+            constructor(tematica, autor, nPag, editorial, titulo, precio){
+                super(nPag, editorial, titulo, precio);
+                this.tematica = tematica;
+                this.autor = autor;
+            }
+        }
+
+        class Comic extends Publicacion{
+            constructor(coleccion, personaje, guion, dibujo, nPag, editorial, titulo, precio){
+                super(nPag, editorial, titulo, precio);
+                this.coleccion = coleccion;
+                this.personaje = personaje;
+                this.guion = guion;
+                this.dibujo = dibujo;
+            }
+        }
+
+        let lib = new Libro("Fantasía", "Rick Riordan", "370", "Unknown", "La pirámide roja", "25");
+        console.log(lib);
+        let com = new Comic("Colec1", "Pers1", "Guion1", "dib1", "370", "Unknown", "La pirámide roja", "25");
+        console.log(com);
+
+    </script>
+</body>
+</html>
