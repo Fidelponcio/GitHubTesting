@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej06</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="num1">
+        <input type="button" id="btn1" value="Introduce un número">
+    </form>
+    <p id="visor"></p>
+    <script>
+        /*
+        6.-Adapta el ejercicio 7 del tema anterior, creando una función que acepte un número como argumento y
+        devuelva un array. Si es primo el array solo tendrá los números 1 y el número argumento. Si no es primo el
+        array contiene además el resto de los divisores del número.
+        */
+
+        let boton = document.getElementById("btn1");
+        let input = document.getElementById("num1");
+        let visor = document.getElementById("visor");
+
+        var eratosthenes = function(n) {
+            // Eratosthenes algorithm to find all primes under n
+            var array = [], upperLimit = Math.sqrt(n), output = [];
+
+            // Make an array from 2 to (n - 1)
+            for (var i = 0; i < n; i++) {
+                array.push(true);
+            }
+
+            // Remove multiples of primes starting from 2, 3, 5,...
+            for (var i = 2; i <= upperLimit; i++) {
+                if (array[i]) {
+                    for (var j = i * i; j < n; j += i) {
+                        array[j] = false;
+                    }
+                }
+            }
+
+            // All array[i] set to true are primes
+            for (var i = 2; i < n; i++) {
+                if(array[i]) {
+                    output.push(i);
+                }
+            }
+
+            return output;
+        };
+
+        document.getElementById("output").innerHTML = eratosthenes(49).join(", ");
+
+    </script>
+</body>
+</html>

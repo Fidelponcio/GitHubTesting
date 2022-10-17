@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej05</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="peso" placeholder="peso(kg)">
+        <input type="number" id="altura" placeholder="altura(m)">
+        <input type="button" id="btn1" value="Calcular IMC">
+    </form>
+    <p id="visor"></p>
+    <script>
+        /*
+        5.-Adapta el ejercicio 6 del tema anterior, creando una función que acepte dos parámetros: peso y altura y
+    devuelva el IMC.
+        */
+        let boton = document.getElementById("btn1");
+        let visor = document.getElementById("visor");
+
+        
+        boton.addEventListener("click", calcIMC);
+        
+        function calcIMC(peso, altura){
+            peso = document.getElementById("peso").value;
+            altura = document.getElementById("altura").value;
+            let imcText; 
+            let IMC = (peso / Math.pow(altura, 2)).toFixed(2);
+            
+            if (IMC < 18.5){
+            imcText = 'Peso insuficiente';
+            } else if (IMC >= 18.5 && IMC < 25){
+                imcText = 'Peso normal';
+            } else if (IMC >= 25 && IMC < 27){
+                imcText = 'Sobrepeso grado I';
+            } else if (IMC >= 27 && IMC < 30){
+                imcText = 'Sobrepeso grado II';
+            } else if (IMC >= 30 && IMC < 35){
+                imcText = 'Obesidad I';
+            } else if (IMC >= 35 && IMC < 40){
+                imcText = 'Obesidad II';
+            } else if (IMC >= 40 && IMC < 50){
+                imcText = 'Obesidad III (mórbida)';
+            } else if (IMC >= 50){
+                imcText = 'Obesidad III (extrema)';
+            }
+
+                visor.innerHTML = IMC +' '+ imcText;
+            }
+
+
+    </script>
+</body>
+</html>

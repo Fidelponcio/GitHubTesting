@@ -24,29 +24,17 @@
 
         boton.addEventListener("click", getNif);
 
-        function getNif(e){
-            e = input.value;
-            if (e < 0 || e > 99999999 || isNaN(e)){
+        function getNif(NIF){
+            var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+            NIF = input.value;
+            if (NIF < 0 || NIF > 99999999){
                 visor.innerText = "Número incorrecto";
             } else {
-                
+                let calc = NIF % 23;
+                visor.innerText = (NIF + letras[calc]);
             }
         }
-        
-        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-        let NIF;
-        
-        do {
-            NIF = prompt('Introduce tu número de DNI (sin la letra):');
-            
-        if (NIF < 0 || NIF > 99999999 || isNaN(NIF)){
-            console.log('Número introducido incorrecto!');
-        } else {
-            let calc = NIF % 23;
-            console.log(NIF+ letras[calc]);
-        }
 
-    } while(NIF < 0 || NIF > 99999999 || isNaN(NIF));
     </script>
 </body>
 </html>

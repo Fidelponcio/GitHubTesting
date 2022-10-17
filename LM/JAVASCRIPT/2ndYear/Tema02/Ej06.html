@@ -34,22 +34,25 @@
 
         let peso= prompt('Introducir peso:');
         let altura= prompt('Introducir altura(en metros):');
-        let imcText; let IMC = (peso / (Math.pow(altura/100, 2))).toFixed(2);
+        let imcText; 
+        let IMC = (peso / Math.pow(altura, 2)).toFixed(2);
+        console.log(typeof(IMC));
+
         if (IMC < 18.5){
             imcText = 'Peso insuficiente';
-        } else if (18.5 < IMC < 25){
+        } else if (IMC >= 18.5 && IMC < 25){
             imcText = 'Peso normal';
-        } else if (25 <= IMC < 27){
+        } else if (IMC >= 25 && IMC < 27){
             imcText = 'Sobrepeso grado I';
-        } else if (27 <= IMC < 30){
+        } else if (IMC >= 27 && IMC < 30){
             imcText = 'Sobrepeso grado II';
-        } else if (30 <= IMC < 35){
+        } else if (IMC >= 30 && IMC < 35){
             imcText = 'Obesidad I';
-        } else if (35 <= IMC < 40){
+        } else if (IMC >= 35 && IMC < 40){
             imcText = 'Obesidad II';
-        } else if (40 <= IMC < 50){
+        } else if (IMC >= 40 && IMC < 50){
             imcText = 'Obesidad III (mórbida)';
-        } else if (IMC > 50){
+        } else if (IMC >= 50){
             imcText = 'Obesidad III (extrema)';
         }
 
