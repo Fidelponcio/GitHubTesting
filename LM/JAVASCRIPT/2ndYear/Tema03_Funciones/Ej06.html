@@ -11,7 +11,7 @@
         <input type="number" id="num1">
         <input type="button" id="btn1" value="Introduce un número">
     </form>
-    <p id="visor"></p>
+    <div id="output"></div>
     <script>
         /*
         6.-Adapta el ejercicio 7 del tema anterior, creando una función que acepte un número como argumento y
@@ -21,9 +21,13 @@
 
         let boton = document.getElementById("btn1");
         let input = document.getElementById("num1");
-        let visor = document.getElementById("visor");
+        let n = 0;
+        // let visor = document.getElementById("output");
 
+        // boton.addEventListener("click", eratosthenes);
+        
         var eratosthenes = function(n) {
+            n = input.value;
             // Eratosthenes algorithm to find all primes under n
             var array = [], upperLimit = Math.sqrt(n), output = [];
 
@@ -47,11 +51,11 @@
                     output.push(i);
                 }
             }
-
+            
             return output;
         };
-
-        document.getElementById("output").innerHTML = eratosthenes(49).join(", ");
+        
+        document.getElementById("output").innerHTML = eratosthenes(n).join(", ");
 
     </script>
 </body>
