@@ -19,12 +19,13 @@
         */
 
         let boton = document.getElementById("btn1");
-        let talla = document.getElementById("num1");
+        let talla = document.getElementById("text1");
         let visor = document.getElementById("visor");
 
         boton.addEventListener("click", getTalla);
 
         function getTalla(e){
+            e = String(talla.value);
             switch(e.toUpperCase()){
                 case 'XXXL':
                 case 'XXL':

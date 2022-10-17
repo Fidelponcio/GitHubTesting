@@ -23,19 +23,28 @@
         let input = document.getElementById("num1");
         let visor = document.getElementById("visor");
         
-        boton.addEventListener("click", function(){
-            
-            let arrLength = input.value;
-            let arr = [];
-            for (let index = 0; index < arrLength; index++) {
-                arr.push(Math.floor(Math.random()* 10 + 1));
-                visor.innerText = arr;
-            }
-            
+        let arrNum, arrMinMax, min = 0, max = 0;
 
+        boton.addEventListener("click", function(){
+            let input = document.getElementById("num1").value;
+            arrNum = new Array(Number(input));
+            boton.style.display = "none";
+
+            for (let index = 0; index < arrNum.length; index++) {
+                num = Number(prompt("Introduce un número:"));
+                arrNum[index] = num;
+            }
+
+            console.log(arrNum);
+            visor.innerText = min_max(arrNum);
         });
 
-        function 
+        //https://es.stackoverflow.com/questions/535687/como-puedo-devolver-un-array-que-contenga-el-menor-y-mayor-numero-de-otro-array
+        function min_max(arr) {
+            arr.sort(function (a, b) { return a - b; });
+            return [arr[0], arr[arr.length - 1]];
+
+        }
 
     </script>
 </body>

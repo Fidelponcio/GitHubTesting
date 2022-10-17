@@ -7,11 +7,46 @@
     <title>Ej04</title>
 </head>
 <body>
+    <form action="">
+        <input type="number" id="num1">
+        <input type="button" id="btn1" value="Introduce tu número de DNI (sin la letra):">
+    </form>
+    <p id="visor"></p>
     <script>
         /*
         4.-Adaptar el ejercicio 5 del tema anterior, creando una función que acepte los números del dni como
         argumento y devuelva un string con el NIF completo.
         */
+
+        let boton = document.getElementById("btn1");
+        let input = document.getElementById("num1");
+        let visor = document.getElementById("visor");
+
+        boton.addEventListener("click", getNif);
+
+        function getNif(e){
+            e = input.value;
+            if (e < 0 || e > 99999999 || isNaN(e)){
+                visor.innerText = "Número incorrecto";
+            } else {
+                
+            }
+        }
+        
+        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+        let NIF;
+        
+        do {
+            NIF = prompt('Introduce tu número de DNI (sin la letra):');
+            
+        if (NIF < 0 || NIF > 99999999 || isNaN(NIF)){
+            console.log('Número introducido incorrecto!');
+        } else {
+            let calc = NIF % 23;
+            console.log(NIF+ letras[calc]);
+        }
+
+    } while(NIF < 0 || NIF > 99999999 || isNaN(NIF));
     </script>
 </body>
 </html>

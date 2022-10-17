@@ -30,17 +30,20 @@
        boton.addEventListener("click", function(){
            let input = document.getElementById("num1").value;
            arrNum = new Array(Number(input));
-           
-           
-           // console.log(arrNum);
+           boton.style.display = "none";
         });
         
-        boton2.addEventListener("click", function(){
+        boton2.addEventListener("click", function(){ 
             let input2 = document.getElementById("num2").value;
             arrNum[index] = input2;
             index++;
+            visor.innerText = arrNum;
             console.log(arrNum);
-            //if index > array
+            num2.value = "";
+            if (index >= arrNum.length){
+                boton2.style.display = "none";
+            }
+            
         })
 
         /*function arrayLength(length){
