@@ -21,15 +21,16 @@
 
         let boton = document.getElementById("btn1");
         let input = document.getElementById("num1");
-        let n = 0;
-        // let visor = document.getElementById("output");
+        let visor = document.getElementById("output");
 
-        // boton.addEventListener("click", eratosthenes);
+        boton.addEventListener("click", eratosthenes);
         
-        var eratosthenes = function(n) {
+        function eratosthenes(n) {
             n = input.value;
             // Eratosthenes algorithm to find all primes under n
-            var array = [], upperLimit = Math.sqrt(n), output = [];
+            var array = [];
+            upperLimit = Math.sqrt(n); 
+            output = [];
 
             // Make an array from 2 to (n - 1)
             for (var i = 0; i < n; i++) {
@@ -52,10 +53,8 @@
                 }
             }
             
-            return output;
+            visor.innerText = output.join(", ");  
         };
-        
-        document.getElementById("output").innerHTML = eratosthenes(n).join(", ");
 
     </script>
 </body>
