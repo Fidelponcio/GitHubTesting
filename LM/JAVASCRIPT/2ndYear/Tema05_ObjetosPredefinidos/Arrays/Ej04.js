@@ -16,16 +16,24 @@ let arrEntra = [], arrSale = [], arrSale2 = [], palabra;
 boton.addEventListener("click", moverLetra);
 
 function moverLetra(){
+    // if (index === arrSale.length){
+    //     //Desactivar botón
+    //     boton.style.display = "none";
+    // } else {}
+
     palabra = sale.value;
-    
     //Split para separar la palabra
     arrSale = palabra.split("");
+    
     arrEntra.push(arrSale[index]);
+    index++;
     //Shift para borrar el primer elemento de un array
     arrSale2 = arrSale.shift();
-    index++;
-    entra.innerText = arrEntra;
-    console.log(arrEntra);
-    sale.innerText = arrSale;
     console.log(arrSale2);
+    console.log(arrSale);
+
+    entra.innerText = arrEntra.join("");
+    // console.log(arrEntra.join(""));
+    sale.innerText = arrSale2;
+
 }
