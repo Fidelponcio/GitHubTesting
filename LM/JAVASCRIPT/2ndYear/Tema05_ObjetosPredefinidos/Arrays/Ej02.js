@@ -13,9 +13,6 @@ while((i = array.indexOf(3, i+1)) != -1){
 }
 
 
-//Segundo parámetro de indexOf tendría que ser el propio indexOf
-// indices.push(array.indexOf(3, ));
-
 //Con loop for sin indexOf
 /*for (let index = 0; index < array.length; index++) {
     if (array[index] === 3){

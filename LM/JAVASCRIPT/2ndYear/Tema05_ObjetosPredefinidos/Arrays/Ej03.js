@@ -7,7 +7,7 @@ let array = [1,5,2,7,3,2,4,5,8,7,3,4,5,6,7,3,8,4,1];
 // array = [...new Set(array)];
 array.sort(function(a, b){return a-b});
 
-console.log(array);
+// console.log(array);
 
 //Dividimos los números en pares e impares y después los añadimos a otro array con concat
 let arrPar = [], arrImpar = [];

@@ -10,30 +10,24 @@ let entra = document.getElementById("entra");
 let sale = document.getElementById("sale");
 let boton = document.getElementById("pasar");
 
-let index = 0;
+// let index = 0;
 let arrEntra = [], arrSale = [], arrSale2 = [], palabra; 
 
 boton.addEventListener("click", moverLetra);
 
 function moverLetra(){
-    // if (index === arrSale.length){
-    //     //Desactivar botón
-    //     boton.style.display = "none";
-    // } else {}
+    palabra = sale.value.split("");
+    arrEntra = palabra.shift();
+    arrSale = palabra.join("");
+    entra.value += arrEntra;
+    sale.value = arrSale;
 
-    palabra = sale.value;
-    //Split para separar la palabra
-    arrSale = palabra.split("");
-    
-    arrEntra.push(arrSale[index]);
-    index++;
-    //Shift para borrar el primer elemento de un array
-    arrSale2 = arrSale.shift();
-    console.log(arrSale2);
+
     console.log(arrSale);
+    console.log(arrEntra);
 
-    entra.innerText = arrEntra.join("");
-    // console.log(arrEntra.join(""));
-    sale.innerText = arrSale2;
-
+    if (arrSale === ""){
+        boton.style.display = "none";
+        sale.style.pointerEvents = "none";
+    }
 }
