@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej01</title>
+    <style>
+        .visor {
+            width: 150px;
+            height: 150px;
+            border: solid chartreuse 5px;
+        }
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="visor"><img src="./imagenes/animal1.PNG" alt="a1"></div>
+
+    <script sync>
+        let images = [
+            "./imagenes/animal1.png",
+            "./imagenes/animal2.png",
+            "./imagenes/animal3.png",
+            "./imagenes/animal4.png",
+            "./imagenes/animal5.png"
+        ]
+        /*for (let index = 0; index < imagenes.length; index++) {
+            let img = new Image();
+            img.src = images[i];
+            
+        }*/
+
+        let intervalo = setInterval(() => {
+            //Obtener num aleatorio entre 0 y imagenes.length
+            let random = Math.floor(Math.random()*images.length);
+            //Capturar imagen
+            let imagen = document.querySelector("img");
+            //Modificar el src de la imagen con el elemento del array
+            imagen.src = images[random];
+
+        }, 3000);
+    </script>
+</body>
+</html>
