@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grupo {
+            margin: auto;
+            padding: 5px;
+            border: 2px solid;
+            width:60%;
+        }
+        .contenedor{
+            width: 30%;
+            margin:auto;
+        }
+        #btn1{
+           background-color: #cccccc;
+           border: 2px solid;
+           margin: 10px  auto;
+           padding: 5px;
+           text-align: center;
+           width: 20%;
+          
+        }
+        #btn1 a{
+            text-decoration: none;
+            margin: auto;
+        }
+        #visor{
+            margin:20px;
+        }
+        
+        #terminos{
+            border:none
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+ 
+<body>
+    <div class="contenedor">
+        <form>
+            <h2>
+                Datos personales
+            </h2>
+            <div id="personal" class="grupo">
+                <div>
+                    Nombre
+                </div>
+                <input type="text" id="nombre">
+                <div>
+                    Primer apellido
+                </div>
+                <input type="text" id="apel1">
+                <div>
+                    Segundo apellido
+                </div>
+                <input type="text" id="apel2">
+                <div>
+                    Edad
+                </div>
+                <input type="number" id="edad">
+                <div>
+                    Email
+                </div>
+                <input type="email" id="email">
+
+            </div>
+            <h2>
+                Carnets de conducir
+            </h2>
+            <div id="carnets" class="grupo">
+                <div>
+                    <input type="checkbox" id="check1" value="A">
+                    <label for="check1">Moto</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="check2" value="B">
+                    <label for="check2">Coche</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="check3" value="C">
+                    <label for="check3">Camión</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="check4" value="D">
+                    <label for="check4">Autobús</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="check5" value="E">
+                    <label for="check5">Pesado</label>
+                </div>
+
+            </div>
+            <h2>
+                Sexo
+            </h2>
+            <div id="sexo" class="grupo">
+                <div>
+                    <input type="radio" id="hombre" name="sexo" value="hombre">
+                    <label for="hombre">hombre</label>
+                </div>
+                <div>
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">mujer</label>
+                </div>
+            </div>
+            <h2>
+                Estudios
+            </h2>
+            <div id="estudios" class="grupo">
+                <select id="selEstudios">
+                    <option>--seleccione una opción--</option>
+                    <option value="Sin estudios">Sin estudios</option>
+                    <option value="ESO">ESO</option>
+                    <option value="Bachillerato">Bachillerato</option>
+                    <option value="Diplomado">Diplomado</option>
+                    <option value="Licenciado">Licenciado</option>
+                    <option value="Ingeniero">Ingeniero</option>
+                </select>
+            </div>
+            <div id="terminos" class="grupo">
+                <div>
+                    <input type="checkbox" id="checkTerminos">
+                    <label for="checkTerminos">He leído y aceptado los términos</label>
+                </div>
+            </div>
+            <div id="btn1">
+               <a href="#">REGISTRAR</a> 
+            </div>
+        </form>
+    </div>
+    <div class="contenedor" id="visor">
+
+    </div>
+    <script src="js/formulario.js">
+
+    </script>
+</body>
+
+</html>
